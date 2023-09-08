@@ -1,0 +1,23 @@
+  node-{node_num}:
+    container_name: node-{node_num}
+    image: hyperledger/besu:latest
+
+    entrypoint:
+      - /bin/bash
+      - -c
+      - |
+        sleep 10;
+        /opt/besu/bin/besu --data-path=/opt/besu/data \
+         --genesis-file=/opt/besu/genesis.json \
+         --config-file=/config/config.toml \
+         --bootnodes=enode://{enode}@172.16.239.8:30303;
+
+    volumes:
+      - ./genesis.json:/opt/besu/genesis.json
+      - ./nodes/node-{node_num}/data:/opt/besu/data
+      - ./config.toml:/config/config.toml
+    depends_on:
+      - node-1
+    networks:
+      besu-network:
+        ipv4_address: 172.16.239.{ip_suffix}
