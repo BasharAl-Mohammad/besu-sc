@@ -3,13 +3,19 @@ import os
 import subprocess
 import shutil
 import sys
+import time
 
 basepath=os.path.abspath(os.path.join(os.getcwd(),'..'))
 
 
 def generate_nodes_folders(num):
+
+    basepath=os.path.abspath(os.path.join(os.getcwd(),'..'))
+
+    if os.path.exists(os.path.join(basepath,'nodes')):
+        shutil.rmtree(os.path.join(basepath,'nodes'))
+
     for node_num in range(1, num + 1):
-        basepath=os.path.abspath(os.path.join(os.getcwd(),'..'))
         node_dir = os.path.join(basepath,'nodes',f"node-{node_num}")
         data_dir = os.path.join(node_dir, "data")
         os.makedirs(data_dir, exist_ok=True)
@@ -292,7 +298,6 @@ def generate_docker_compose(num_nodes):
         file.write(compose_content)
 
     print("Docker Compose file generated successfully.")
-    shutil.rmtree(os.path.join(basepath,'networkFiles'))
 
 def launch_network():
     match sys.argv[1]:
@@ -314,3 +319,5 @@ def launch_network():
 
 if __name__=="__main__":
     launch_network()
+    time.sleep(30)
+    subprocess.run(['docker','compose', '-f', './../docker-compose.yml', 'up', '-d'])
