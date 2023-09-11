@@ -1,0 +1,98 @@
+version: "3.4"
+
+networks:
+  besu-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.239.0/24
+
+services:
+  node-1:
+    container_name: node-1
+    image: hyperledger/besu:latest
+    entrypoint:
+      - /bin/bash
+      - -c
+      - |
+        /opt/besu/bin/besu --data-path=/opt/besu/data \
+        --genesis-file=/opt/besu/genesis.json --rpc-http-enabled --rpc-http-port=8545 \
+        --host-allowlist="*" --rpc-http-cors-origins="all" \
+        --rpc-http-api=ADMIN, IBFT, QBFT, CLIQUE, ETH, NET, TXPOOL, WEB3 \
+        --rpc-ws-enabled --rpc-ws-port=8546 --p2p-port=30303 --min-gas-price=0 \
+        --miner-coinbase f17f52151EbEF6C7334FAD080c5704D77216b732;
+    volumes:
+      - ./genesis.json:/opt/besu/genesis.json
+      - ./nodes/node-1/data:/opt/besu/data
+    networks:
+      besu-network:
+        ipv4_address: 172.16.239.8
+  node-2:
+    container_name: node-2
+    image: hyperledger/besu:latest
+
+    entrypoint:
+      - /bin/bash
+      - -c
+      - |
+        sleep 10;
+        /opt/besu/bin/besu --data-path=/opt/besu/data \
+         --genesis-file=/opt/besu/genesis.json \
+         --config-file=/config/config.toml \
+         --bootnodes=enode://d62f5c240e2b5b5f31651805c98ff0fa9cdca604fd0ffaf43c757cad02981ff5ff5b7e793548cd3ead525efeee2d6de202c3c4437bc3c72134ef8483d3046616@172.16.239.8:30303;
+
+    volumes:
+      - ./genesis.json:/opt/besu/genesis.json
+      - ./nodes/node-2/data:/opt/besu/data
+      - ./config.toml:/config/config.toml
+    depends_on:
+      - node-1
+    networks:
+      besu-network:
+        ipv4_address: 172.16.239.9
+  node-3:
+    container_name: node-3
+    image: hyperledger/besu:latest
+
+    entrypoint:
+      - /bin/bash
+      - -c
+      - |
+        sleep 10;
+        /opt/besu/bin/besu --data-path=/opt/besu/data \
+         --genesis-file=/opt/besu/genesis.json \
+         --config-file=/config/config.toml \
+         --bootnodes=enode://d62f5c240e2b5b5f31651805c98ff0fa9cdca604fd0ffaf43c757cad02981ff5ff5b7e793548cd3ead525efeee2d6de202c3c4437bc3c72134ef8483d3046616@172.16.239.8:30303;
+
+    volumes:
+      - ./genesis.json:/opt/besu/genesis.json
+      - ./nodes/node-3/data:/opt/besu/data
+      - ./config.toml:/config/config.toml
+    depends_on:
+      - node-1
+    networks:
+      besu-network:
+        ipv4_address: 172.16.239.10
+  node-4:
+    container_name: node-4
+    image: hyperledger/besu:latest
+
+    entrypoint:
+      - /bin/bash
+      - -c
+      - |
+        sleep 10;
+        /opt/besu/bin/besu --data-path=/opt/besu/data \
+         --genesis-file=/opt/besu/genesis.json \
+         --config-file=/config/config.toml \
+         --bootnodes=enode://d62f5c240e2b5b5f31651805c98ff0fa9cdca604fd0ffaf43c757cad02981ff5ff5b7e793548cd3ead525efeee2d6de202c3c4437bc3c72134ef8483d3046616@172.16.239.8:30303;
+
+    volumes:
+      - ./genesis.json:/opt/besu/genesis.json
+      - ./nodes/node-4/data:/opt/besu/data
+      - ./config.toml:/config/config.toml
+    depends_on:
+      - node-1
+    networks:
+      besu-network:
+        ipv4_address: 172.16.239.11
