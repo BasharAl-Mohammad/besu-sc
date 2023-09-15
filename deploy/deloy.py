@@ -4,13 +4,43 @@ import subprocess
 import shutil
 import sys
 import time
+import docker
+from web3 import Web3
 
 basepath=os.path.abspath(os.path.join(os.getcwd(),'..'))
 
 
-def generate_nodes_folders(num):
+def containers_info():
+    client = docker.from_env()
+    containers = client.containers.list()
+    container_info_dict = {}
+    for container in containers:
+        container_name = container.name
+        if container_name.startswith("node-") and container_name!="node-1":
+            container_info = container.attrs
+            container_ip = container_info['NetworkSettings']['Networks']['besu-sc_besu-network']['IPAddress']
+            container_id = container_info['Id']
+            private_key_path = os.path.join(basepath,'nodes',container_name,'data','key')
+            if os.path.exists(private_key_path):
+                with open(private_key_path, "r") as private_key_file:
+                    private_key = private_key_file.read()
+                    w3 = Web3(Web3.HTTPProvider(f'http://'+container_ip+':8545'))
+                    account = w3.eth.account.from_key(private_key)
+                container_info_dict[container_name] = {
+                    "id": container_id,
+                    "ip": container_ip,
+                    "private_key": private_key,
+                    "public_key": account.address,
+                    "EnergyTotal": 0,
+                    "EnergyAvailable": 0
+                }
 
-    basepath=os.path.abspath(os.path.join(os.getcwd(),'..'))
+    with open(os.path.join(basepath,"nodes_info.json"), "w") as json_file:
+        json.dump(container_info_dict, json_file, indent=4)
+
+    print("Node information with private keys saved to nodes_info.json")
+
+def generate_nodes_folders(num):
 
     if os.path.exists(os.path.join(basepath,'nodes')):
         shutil.rmtree(os.path.join(basepath,'nodes'))
@@ -321,3 +351,4 @@ if __name__=="__main__":
     launch_network()
     time.sleep(30)
     subprocess.run(['docker','compose', '-f', './../docker-compose.yml', 'up', '-d'])
+    containers_info()

@@ -1,0 +1,34 @@
+{
+    "node-2": {
+        "id": "9f512d817e229ef0cdf5d1bcf74a52762392f18a639e29e494a2732a39bf2180",
+        "ip": "172.16.239.9",
+        "private_key": "0x8c77c1dbdeadc0d7d1998c4cc9a4701e55bcab1ebc5522d583ba6595063b7f09",
+        "public_key": "0xf32C2a7d212538b138E100a4fFb79E72EDE02dF1",
+        "EnergyTotal": 0,
+        "EnergyAvailable": 0
+    },
+    "node-4": {
+        "id": "4eafda1bf37ca5feedb34cc2d4d3eeff2e153c0ef449943808e561dbf7e4c4b7",
+        "ip": "172.16.239.11",
+        "private_key": "0xbc809cdc8baf7767890b064987c1c5a93cf76bac1c3ffecd310148d509619f36",
+        "public_key": "0x6fa9364490C661dc77C0851782EFb26aaDe49cd0",
+        "EnergyTotal": 0,
+        "EnergyAvailable": 0
+    },
+    "node-3": {
+        "id": "7bb9b6e8e967aeb437b284dc518934acf52442a70051ef3bf81502d65c9a48d9",
+        "ip": "172.16.239.10",
+        "private_key": "0x7dfa52e5d75de9db5ed3690b37f0d992c80aff21a6097a7e738f0fe39915efbc",
+        "public_key": "0xF10506B5D76eC6C0eee83F51F6605333E09F331F",
+        "EnergyTotal": 0,
+        "EnergyAvailable": 0
+    },
+    "node-1": {
+        "id": "5e528a1ce97f4a354d844ee84cd422dfda2d7c3ebb3d01dbeea4de1b9886dd43",
+        "ip": "172.16.239.8",
+        "private_key": "0x1dd5f8fb3b62e8ad4d62e27f7e4497c46b2b06840f86cb4b2d75eace411f95c9",
+        "public_key": "0x56Bf5c9a63c64dCFFf03F416e4682F044a3f25d2",
+        "EnergyTotal": 0,
+        "EnergyAvailable": 0
+    }
+}

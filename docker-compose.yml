@@ -39,7 +39,7 @@ services:
         /opt/besu/bin/besu --data-path=/opt/besu/data \
          --genesis-file=/opt/besu/genesis.json \
          --config-file=/config/config.toml \
-         --bootnodes=enode://d62f5c240e2b5b5f31651805c98ff0fa9cdca604fd0ffaf43c757cad02981ff5ff5b7e793548cd3ead525efeee2d6de202c3c4437bc3c72134ef8483d3046616@172.16.239.8:30303;
+         --bootnodes=enode://d83d93cda56b87fc47d1b2cd722da58dfebf11ac322bb43d23535ffd9dfbd0e5793f68815ab89fb40b2325d9d450f68e084899cfe552bf777416bb1e5cebe1cc@172.16.239.8:30303;
 
     volumes:
       - ./genesis.json:/opt/besu/genesis.json
@@ -62,7 +62,7 @@ services:
         /opt/besu/bin/besu --data-path=/opt/besu/data \
          --genesis-file=/opt/besu/genesis.json \
          --config-file=/config/config.toml \
-         --bootnodes=enode://d62f5c240e2b5b5f31651805c98ff0fa9cdca604fd0ffaf43c757cad02981ff5ff5b7e793548cd3ead525efeee2d6de202c3c4437bc3c72134ef8483d3046616@172.16.239.8:30303;
+         --bootnodes=enode://d83d93cda56b87fc47d1b2cd722da58dfebf11ac322bb43d23535ffd9dfbd0e5793f68815ab89fb40b2325d9d450f68e084899cfe552bf777416bb1e5cebe1cc@172.16.239.8:30303;
 
     volumes:
       - ./genesis.json:/opt/besu/genesis.json
@@ -85,7 +85,7 @@ services:
         /opt/besu/bin/besu --data-path=/opt/besu/data \
          --genesis-file=/opt/besu/genesis.json \
          --config-file=/config/config.toml \
-         --bootnodes=enode://d62f5c240e2b5b5f31651805c98ff0fa9cdca604fd0ffaf43c757cad02981ff5ff5b7e793548cd3ead525efeee2d6de202c3c4437bc3c72134ef8483d3046616@172.16.239.8:30303;
+         --bootnodes=enode://d83d93cda56b87fc47d1b2cd722da58dfebf11ac322bb43d23535ffd9dfbd0e5793f68815ab89fb40b2325d9d450f68e084899cfe552bf777416bb1e5cebe1cc@172.16.239.8:30303;
 
     volumes:
       - ./genesis.json:/opt/besu/genesis.json
