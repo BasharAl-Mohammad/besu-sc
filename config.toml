@@ -23,5 +23,3 @@ rpc-ws-port=8546
 metrics-enabled=true
 metrics-host="0.0.0.0"
 metrics-port=9091
-
-tx-pool-limit-by-account-percentage=1
