@@ -52,6 +52,7 @@ contract EnergyTradingContract {
     mapping(bytes32 => mapping(address => bool)) private roles;
 
     event openTrades(uint256 dayUnix);
+    event closeMarket();
     event NewOrder();
     event HoldEnergy(address indexed contributor, uint24 energyAmount, uint256 dayId, uint8 session);
 
@@ -82,6 +83,11 @@ contract EnergyTradingContract {
         emit openTrades(dayTrade);
     }
 
+    function closeTrade() public onlyAdmin {
+        tradeCenterStatus = false;
+        emit closeMarket();
+    }
+
     function getAllContributors() public view returns (address[] memory, Contributor[] memory) {
         uint256 contributorCount = contributorAddresses.length;
         address[] memory addresses = new address[](contributorCount);
@@ -108,9 +114,9 @@ contract EnergyTradingContract {
         grantRole(CONTRIBUTOR_ROLE, contAddr);
     }
 
-    function updateContributorEnergy(uint96 newDayEnergy) public onlyContributor {
-        require(contributors[msg.sender].dayEnergy > 0, "Contributor does not exist");
-        contributors[msg.sender].dayEnergy = newDayEnergy;
+    function updateContributorEnergy(address contributorAddr, uint96 newDayEnergy) public onlyContributor {
+        require(contributors[contributorAddr].dayEnergy > 0, "Contributor does not exist");
+        contributors[contributorAddr].dayEnergy = newDayEnergy;
     }
 
     function deleteContributor(address contributorAddr) public onlyAdmin {
