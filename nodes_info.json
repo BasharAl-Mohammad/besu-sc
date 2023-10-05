@@ -1,33 +1,33 @@
 {
+    "node-3": {
+        "id": "84459d73294d4beea1458fc8a2a46d8ad63a1b1b4c8be4a93bc7946e9a9c1b8d",
+        "ip": "172.16.239.10",
+        "private_key": "0x46e2f0f103bd896d9dbb56b53af67d83c3c419f6b5a2bf0f9c3008df44f3172c",
+        "public_key": "0xA73011e90Ebffab52BCB1Ff4379823f47C6697A0",
+        "EnergyTotal": 0,
+        "EnergyAvailable": 0
+    },
     "node-2": {
-        "id": "a261e12b2984cd95d356a657d1fe0965e3c321a4ec9ff6e08ec2b266a9377678",
+        "id": "3a75a8d1813e3d53336372e9f9f3912ac8b4f99fa4e9919e48a1b20b8cc623c2",
         "ip": "172.16.239.9",
-        "private_key": "0x518c770ee299ee2eef6140bd1ec8679f2bd6b3d81fb600af3d416854347c4b01",
-        "public_key": "0x8A662DF11520891840b89d27746Fa161Df0F43d0",
+        "private_key": "0x9605a589103743093754083ece47a7aea7d126d2fcf7cd2c1cd6fb0194b881ee",
+        "public_key": "0xe16D769bbC7C79E95f37545DeD5883646671701b",
         "EnergyTotal": 0,
         "EnergyAvailable": 0
     },
     "node-4": {
-        "id": "88224234c47cad0bab38ced394a20f6c3bcc573dea2048b9e1868e572fd8ac49",
+        "id": "f24dbee5137c8ce2449d7fd3ebae519d81c31efdc5ef341f2a9dea77ab38227c",
         "ip": "172.16.239.11",
-        "private_key": "0xc49bc42f4d67b2aa00dd285cf88992cef38b22fc393b95410d1b73709d75c4a8",
-        "public_key": "0x44Fa880d026376c3561aEEA8DDc7a6F973358886",
-        "EnergyTotal": 0,
-        "EnergyAvailable": 0
-    },
-    "node-3": {
-        "id": "d82f8575fe24ee83320a294cde1e71183b2f6872619e597d8375ded4f189bf0b",
-        "ip": "172.16.239.10",
-        "private_key": "0x203b872db1a89b221b0b6d02cd0175d81dcb28d5e2f09cab937fbab13b753c89",
-        "public_key": "0xe972C5422445d5d4f2EE2FA9DB4FB27c6A047ed9",
+        "private_key": "0x7335220fa3e9d5e8247d897ebd0b144014198c6daf9328774435fc8d6255ac70",
+        "public_key": "0x24167D4BCB1400ad87f52568EF7B415eb437678A",
         "EnergyTotal": 0,
         "EnergyAvailable": 0
     },
     "node-1": {
-        "id": "87f7d44c259e83993ec2ae46be866d9131c4af3683a345fed1dbf6152f9e29e7",
+        "id": "72a58abb2de51237148159c8f0c49fb003cb25cafab23fb75554f7b81ccbf8f2",
         "ip": "172.16.239.8",
-        "private_key": "0xba91ff3d6e6993c249d287ff694f93fa860c4b2a2ee1b8ef1747c3a411be3e68",
-        "public_key": "0xD2917cCAF701b26364C84beBC4B3a83bB7645284",
+        "private_key": "0x3ff77fbff5bc060b724328dba05b4376481a5adce32901de3ac4e5994963e11c",
+        "public_key": "0xDa9046B830648c68f4a8D7a42940b5c9E9D218C3",
         "EnergyTotal": 0,
         "EnergyAvailable": 0
     }

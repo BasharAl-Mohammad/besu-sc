@@ -1,0 +1,1052 @@
+Setting logging level to DEBUG
+2023-10-05 09:27:02.996+00:00 | main | DEBUG | Native | Looking in classpath from jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487 for /com/sun/jna/linux-x86-64/libjnidispatch.so
+2023-10-05 09:27:03.000+00:00 | main | DEBUG | Native | Found library resource at jar:file:/opt/besu/lib/jna-5.13.0.jar!/com/sun/jna/linux-x86-64/libjnidispatch.so
+2023-10-05 09:27:03.002+00:00 | main | DEBUG | Native | Extracting library to /opt/besu/.cache/JNA/temp/jna4820560628324964601.tmp
+2023-10-05 09:27:03.006+00:00 | main | DEBUG | Native | Trying /opt/besu/.cache/JNA/temp/jna4820560628324964601.tmp
+2023-10-05 09:27:03.009+00:00 | main | DEBUG | Native | Found jnidispatch at /opt/besu/.cache/JNA/temp/jna4820560628324964601.tmp
+2023-10-05 09:27:03.041+00:00 | main | DEBUG | NativeLibrary | Looking for library 'secp256k1'
+2023-10-05 09:27:03.041+00:00 | main | DEBUG | NativeLibrary | Adding paths from jna.library.path: null
+2023-10-05 09:27:03.042+00:00 | main | DEBUG | NativeLibrary | Trying libsecp256k1.so
+2023-10-05 09:27:03.043+00:00 | main | DEBUG | NativeLibrary | Loading failed with message: libsecp256k1.so: cannot open shared object file: No such file or directory
+2023-10-05 09:27:03.043+00:00 | main | DEBUG | NativeLibrary | Adding system paths: [/usr/lib/x86_64-linux-gnu, /lib/x86_64-linux-gnu, /usr/lib64, /lib64, /usr/lib, /lib]
+2023-10-05 09:27:03.043+00:00 | main | DEBUG | NativeLibrary | Trying libsecp256k1.so
+2023-10-05 09:27:03.044+00:00 | main | DEBUG | NativeLibrary | Loading failed with message: libsecp256k1.so: cannot open shared object file: No such file or directory
+2023-10-05 09:27:03.044+00:00 | main | DEBUG | NativeLibrary | Looking for version variants
+2023-10-05 09:27:03.047+00:00 | main | DEBUG | Native | Looking in classpath from jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487 for secp256k1
+2023-10-05 09:27:03.048+00:00 | main | DEBUG | Native | Found library resource at jar:file:/opt/besu/lib/secp256k1-0.8.1.jar!/linux-x86-64/libsecp256k1.so
+2023-10-05 09:27:03.049+00:00 | main | DEBUG | Native | Extracting library to /opt/besu/.cache/JNA/temp/jna3976140381634019096.tmp
+2023-10-05 09:27:03.058+00:00 | main | DEBUG | NativeLibrary | Found library 'secp256k1' at /opt/besu/.cache/JNA/temp/jna3976140381634019096.tmp
+2023-10-05 09:27:03.100+00:00 | main | INFO  | Besu | Starting Besu
+2023-10-05 09:27:03.166+00:00 | main | DEBUG | LoggerFactory | Using io.vertx.core.logging.Log4j2LogDelegateFactory
+2023-10-05 09:27:03.213+00:00 | main | DEBUG | PlatformDependent0 | -Dio.netty.noUnsafe: false
+2023-10-05 09:27:03.214+00:00 | main | DEBUG | PlatformDependent0 | Java version: 17
+2023-10-05 09:27:03.215+00:00 | main | DEBUG | PlatformDependent0 | sun.misc.Unsafe.theUnsafe: available
+2023-10-05 09:27:03.216+00:00 | main | DEBUG | PlatformDependent0 | sun.misc.Unsafe.copyMemory: available
+2023-10-05 09:27:03.217+00:00 | main | DEBUG | PlatformDependent0 | sun.misc.Unsafe.storeFence: available
+2023-10-05 09:27:03.218+00:00 | main | DEBUG | PlatformDependent0 | java.nio.Buffer.address: available
+2023-10-05 09:27:03.219+00:00 | main | DEBUG | PlatformDependent0 | direct buffer constructor: available
+2023-10-05 09:27:03.220+00:00 | main | DEBUG | PlatformDependent0 | java.nio.Bits.unaligned: available, true
+2023-10-05 09:27:03.222+00:00 | main | DEBUG | PlatformDependent0 | jdk.internal.misc.Unsafe.allocateUninitializedArray(int): available
+2023-10-05 09:27:03.222+00:00 | main | DEBUG | PlatformDependent0 | java.nio.DirectByteBuffer.<init>(long, int): available
+2023-10-05 09:27:03.223+00:00 | main | DEBUG | PlatformDependent | sun.misc.Unsafe: available
+2023-10-05 09:27:03.223+00:00 | main | DEBUG | PlatformDependent | maxDirectMemory: 4148166656 bytes (maybe)
+2023-10-05 09:27:03.224+00:00 | main | DEBUG | PlatformDependent | -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2023-10-05 09:27:03.224+00:00 | main | DEBUG | PlatformDependent | -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2023-10-05 09:27:03.225+00:00 | main | DEBUG | PlatformDependent | -Dio.netty.maxDirectMemory: 4148166656 bytes
+2023-10-05 09:27:03.226+00:00 | main | DEBUG | PlatformDependent | -Dio.netty.uninitializedArrayAllocationThreshold: 1024
+2023-10-05 09:27:03.227+00:00 | main | DEBUG | CleanerJava9 | java.nio.ByteBuffer.cleaner(): available
+2023-10-05 09:27:03.228+00:00 | main | DEBUG | PlatformDependent | -Dio.netty.noPreferDirect: false
+2023-10-05 09:27:03.235+00:00 | main | DEBUG | NativeLibraryLoader | -Dio.netty.native.workdir: /tmp (io.netty.tmpdir)
+2023-10-05 09:27:03.235+00:00 | main | DEBUG | NativeLibraryLoader | -Dio.netty.native.deleteLibAfterLoading: true
+2023-10-05 09:27:03.235+00:00 | main | DEBUG | NativeLibraryLoader | -Dio.netty.native.tryPatchShadedId: true
+2023-10-05 09:27:03.236+00:00 | main | DEBUG | NativeLibraryLoader | -Dio.netty.native.detectNativeLibraryDuplicates: true
+2023-10-05 09:27:03.246+00:00 | main | DEBUG | NativeLibraryLoader | Successfully loaded the library /tmp/libnetty_transport_native_epoll_x86_6416487112073382131985.so
+2023-10-05 09:27:03.252+00:00 | main | DEBUG | NetUtil | -Djava.net.preferIPv4Stack: false
+2023-10-05 09:27:03.252+00:00 | main | DEBUG | NetUtil | -Djava.net.preferIPv6Addresses: false
+2023-10-05 09:27:03.255+00:00 | main | DEBUG | NetUtilInitializations | Loopback interface: lo (lo, 127.0.0.1)
+2023-10-05 09:27:03.257+00:00 | main | DEBUG | NetUtil | /proc/sys/net/core/somaxconn: 4096
+2023-10-05 09:27:03.284+00:00 | main | DEBUG | ResourceLeakDetector | -Dio.netty.leakDetection.level: simple
+2023-10-05 09:27:03.285+00:00 | main | DEBUG | ResourceLeakDetector | -Dio.netty.leakDetection.targetRecords: 4
+2023-10-05 09:27:03.321+00:00 | main | DEBUG | MultithreadEventLoopGroup | -Dio.netty.eventLoopThreads: 24
+2023-10-05 09:27:03.335+00:00 | main | DEBUG | GlobalEventExecutor | -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2023-10-05 09:27:03.349+00:00 | main | DEBUG | InternalThreadLocalMap | -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2023-10-05 09:27:03.349+00:00 | main | DEBUG | InternalThreadLocalMap | -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2023-10-05 09:27:03.372+00:00 | main | DEBUG | PlatformDependent | org.jctools-core.MpscChunkedArrayQueue: available
+2023-10-05 09:27:03.457+00:00 | main | DEBUG | DefaultDnsServerAddressStreamProvider | Default DNS servers: [/127.0.0.11:53] (sun.net.dns.ResolverConfiguration)
+2023-10-05 09:27:03.488+00:00 | main | DEBUG | DefaultHostsFileEntriesResolver | -Dio.netty.hostsFileRefreshInterval: 0
+2023-10-05 09:27:04.155+00:00 | main | WARN  | Besu | --graphql-http-host has been ignored because --graphql-http-enabled was not defined on the command line.
+2023-10-05 09:27:04.158+00:00 | main | DEBUG | Besu | Static Nodes file: /opt/besu/data/static-nodes.json
+2023-10-05 09:27:04.160+00:00 | main | DEBUG | StaticNodesParser | StaticNodes file /opt/besu/data/static-nodes.json does not exist, no static connections will be created.
+2023-10-05 09:27:04.210+00:00 | main | DEBUG | NativeLibrary | Looking for library 'jemalloc'
+2023-10-05 09:27:04.211+00:00 | main | DEBUG | NativeLibrary | Adding paths from jna.library.path: null
+2023-10-05 09:27:04.212+00:00 | main | DEBUG | NativeLibrary | Trying libjemalloc.so
+2023-10-05 09:27:04.213+00:00 | main | DEBUG | NativeLibrary | Found library 'jemalloc' at libjemalloc.so
+2023-10-05 09:27:04.261+00:00 | main | DEBUG | NativeLibrary | Looking for library 'udev'
+2023-10-05 09:27:04.261+00:00 | main | DEBUG | NativeLibrary | Adding paths from jna.library.path: null
+2023-10-05 09:27:04.262+00:00 | main | DEBUG | NativeLibrary | Trying libudev.so
+2023-10-05 09:27:04.262+00:00 | main | DEBUG | NativeLibrary | Loading failed with message: libudev.so: cannot open shared object file: No such file or directory
+2023-10-05 09:27:04.263+00:00 | main | DEBUG | NativeLibrary | Adding system paths: [/usr/lib/x86_64-linux-gnu, /lib/x86_64-linux-gnu, /usr/lib64, /lib64, /usr/lib, /lib]
+2023-10-05 09:27:04.263+00:00 | main | DEBUG | NativeLibrary | Trying libudev.so
+2023-10-05 09:27:04.264+00:00 | main | DEBUG | NativeLibrary | Loading failed with message: libudev.so: cannot open shared object file: No such file or directory
+2023-10-05 09:27:04.265+00:00 | main | DEBUG | NativeLibrary | Looking for version variants
+2023-10-05 09:27:04.268+00:00 | main | DEBUG | NativeLibrary | Trying /usr/lib/x86_64-linux-gnu/libudev.so.1.7.2
+2023-10-05 09:27:04.269+00:00 | main | DEBUG | NativeLibrary | Found library 'udev' at /usr/lib/x86_64-linux-gnu/libudev.so.1.7.2
+2023-10-05 09:27:04.279+00:00 | main | DEBUG | FileUtil | Reading file /proc/self/auxv
+2023-10-05 09:27:04.281+00:00 | main | DEBUG | FileUtil | Reading file /proc/self/auxv
+2023-10-05 09:27:04.299+00:00 | main | DEBUG | FileUtil | Reading file /proc/stat
+2023-10-05 09:27:04.310+00:00 | main | DEBUG | FileUtil | Reading file /proc/meminfo
+2023-10-05 09:27:04.330+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/topology/core_id
+2023-10-05 09:27:04.337+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/topology/core_id
+2023-10-05 09:27:04.338+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/topology/physical_package_id
+2023-10-05 09:27:04.339+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/topology/physical_package_id
+2023-10-05 09:27:04.339+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cpu_capacity
+2023-10-05 09:27:04.350+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index2/level
+2023-10-05 09:27:04.351+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index2/level
+2023-10-05 09:27:04.352+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index2/type
+2023-10-05 09:27:04.352+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index2/type
+2023-10-05 09:27:04.355+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.357+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.360+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index2/coherency_line_size
+2023-10-05 09:27:04.362+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index2/coherency_line_size
+2023-10-05 09:27:04.363+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index2/size
+2023-10-05 09:27:04.364+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index2/size
+2023-10-05 09:27:04.365+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index0/level
+2023-10-05 09:27:04.366+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index0/level
+2023-10-05 09:27:04.367+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index0/type
+2023-10-05 09:27:04.368+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index0/type
+2023-10-05 09:27:04.369+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.370+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.371+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index0/coherency_line_size
+2023-10-05 09:27:04.374+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index0/coherency_line_size
+2023-10-05 09:27:04.375+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index0/size
+2023-10-05 09:27:04.376+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index0/size
+2023-10-05 09:27:04.377+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index3/level
+2023-10-05 09:27:04.378+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index3/level
+2023-10-05 09:27:04.378+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index3/type
+2023-10-05 09:27:04.379+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index3/type
+2023-10-05 09:27:04.380+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.381+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.381+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index3/coherency_line_size
+2023-10-05 09:27:04.382+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index3/coherency_line_size
+2023-10-05 09:27:04.383+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index3/size
+2023-10-05 09:27:04.383+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index3/size
+2023-10-05 09:27:04.385+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index1/level
+2023-10-05 09:27:04.388+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index1/level
+2023-10-05 09:27:04.389+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index1/type
+2023-10-05 09:27:04.390+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index1/type
+2023-10-05 09:27:04.391+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.391+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.392+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index1/coherency_line_size
+2023-10-05 09:27:04.392+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index1/coherency_line_size
+2023-10-05 09:27:04.393+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index1/size
+2023-10-05 09:27:04.393+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu0/cache/index1/size
+2023-10-05 09:27:04.397+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/topology/core_id
+2023-10-05 09:27:04.398+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/topology/core_id
+2023-10-05 09:27:04.399+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/topology/physical_package_id
+2023-10-05 09:27:04.400+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/topology/physical_package_id
+2023-10-05 09:27:04.401+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cpu_capacity
+2023-10-05 09:27:04.404+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index2/level
+2023-10-05 09:27:04.404+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index2/level
+2023-10-05 09:27:04.405+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index2/type
+2023-10-05 09:27:04.406+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index2/type
+2023-10-05 09:27:04.406+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.407+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.407+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index2/coherency_line_size
+2023-10-05 09:27:04.408+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index2/coherency_line_size
+2023-10-05 09:27:04.408+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index2/size
+2023-10-05 09:27:04.409+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index2/size
+2023-10-05 09:27:04.409+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index0/level
+2023-10-05 09:27:04.410+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index0/level
+2023-10-05 09:27:04.410+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index0/type
+2023-10-05 09:27:04.411+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index0/type
+2023-10-05 09:27:04.411+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.411+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.412+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index0/coherency_line_size
+2023-10-05 09:27:04.412+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index0/coherency_line_size
+2023-10-05 09:27:04.413+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index0/size
+2023-10-05 09:27:04.413+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index0/size
+2023-10-05 09:27:04.414+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index3/level
+2023-10-05 09:27:04.414+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index3/level
+2023-10-05 09:27:04.415+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index3/type
+2023-10-05 09:27:04.415+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index3/type
+2023-10-05 09:27:04.416+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.416+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.417+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index3/coherency_line_size
+2023-10-05 09:27:04.417+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index3/coherency_line_size
+2023-10-05 09:27:04.417+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index3/size
+2023-10-05 09:27:04.418+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index3/size
+2023-10-05 09:27:04.418+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index1/level
+2023-10-05 09:27:04.419+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index1/level
+2023-10-05 09:27:04.419+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index1/type
+2023-10-05 09:27:04.420+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index1/type
+2023-10-05 09:27:04.420+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.421+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.421+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index1/coherency_line_size
+2023-10-05 09:27:04.422+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index1/coherency_line_size
+2023-10-05 09:27:04.422+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index1/size
+2023-10-05 09:27:04.423+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu1/cache/index1/size
+2023-10-05 09:27:04.424+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/topology/core_id
+2023-10-05 09:27:04.426+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/topology/core_id
+2023-10-05 09:27:04.426+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/topology/physical_package_id
+2023-10-05 09:27:04.427+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/topology/physical_package_id
+2023-10-05 09:27:04.427+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cpu_capacity
+2023-10-05 09:27:04.428+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index2/level
+2023-10-05 09:27:04.429+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index2/level
+2023-10-05 09:27:04.429+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index2/type
+2023-10-05 09:27:04.430+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index2/type
+2023-10-05 09:27:04.430+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.430+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.431+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index2/coherency_line_size
+2023-10-05 09:27:04.434+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index2/coherency_line_size
+2023-10-05 09:27:04.435+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index2/size
+2023-10-05 09:27:04.436+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index2/size
+2023-10-05 09:27:04.436+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index0/level
+2023-10-05 09:27:04.437+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index0/level
+2023-10-05 09:27:04.437+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index0/type
+2023-10-05 09:27:04.441+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index0/type
+2023-10-05 09:27:04.441+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.442+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.442+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index0/coherency_line_size
+2023-10-05 09:27:04.443+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index0/coherency_line_size
+2023-10-05 09:27:04.443+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index0/size
+2023-10-05 09:27:04.444+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index0/size
+2023-10-05 09:27:04.445+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index3/level
+2023-10-05 09:27:04.448+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index3/level
+2023-10-05 09:27:04.448+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index3/type
+2023-10-05 09:27:04.449+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index3/type
+2023-10-05 09:27:04.449+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.450+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.451+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index3/coherency_line_size
+2023-10-05 09:27:04.452+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index3/coherency_line_size
+2023-10-05 09:27:04.452+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index3/size
+2023-10-05 09:27:04.455+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index3/size
+2023-10-05 09:27:04.456+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index1/level
+2023-10-05 09:27:04.456+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index1/level
+2023-10-05 09:27:04.457+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index1/type
+2023-10-05 09:27:04.457+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index1/type
+2023-10-05 09:27:04.467+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.467+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.468+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index1/coherency_line_size
+2023-10-05 09:27:04.468+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index1/coherency_line_size
+2023-10-05 09:27:04.469+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index1/size
+2023-10-05 09:27:04.469+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu10/cache/index1/size
+2023-10-05 09:27:04.470+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/topology/core_id
+2023-10-05 09:27:04.470+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/topology/core_id
+2023-10-05 09:27:04.471+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/topology/physical_package_id
+2023-10-05 09:27:04.471+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/topology/physical_package_id
+2023-10-05 09:27:04.472+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cpu_capacity
+2023-10-05 09:27:04.473+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index2/level
+2023-10-05 09:27:04.473+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index2/level
+2023-10-05 09:27:04.473+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index2/type
+2023-10-05 09:27:04.474+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index2/type
+2023-10-05 09:27:04.474+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.474+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.475+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index2/coherency_line_size
+2023-10-05 09:27:04.475+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index2/coherency_line_size
+2023-10-05 09:27:04.476+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index2/size
+2023-10-05 09:27:04.478+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index2/size
+2023-10-05 09:27:04.479+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index0/level
+2023-10-05 09:27:04.479+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index0/level
+2023-10-05 09:27:04.479+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index0/type
+2023-10-05 09:27:04.480+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index0/type
+2023-10-05 09:27:04.481+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.481+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.482+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index0/coherency_line_size
+2023-10-05 09:27:04.484+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index0/coherency_line_size
+2023-10-05 09:27:04.484+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index0/size
+2023-10-05 09:27:04.485+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index0/size
+2023-10-05 09:27:04.486+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index3/level
+2023-10-05 09:27:04.487+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index3/level
+2023-10-05 09:27:04.487+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index3/type
+2023-10-05 09:27:04.491+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index3/type
+2023-10-05 09:27:04.492+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.492+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.492+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index3/coherency_line_size
+2023-10-05 09:27:04.494+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index3/coherency_line_size
+2023-10-05 09:27:04.495+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index3/size
+2023-10-05 09:27:04.495+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index3/size
+2023-10-05 09:27:04.496+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index1/level
+2023-10-05 09:27:04.499+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index1/level
+2023-10-05 09:27:04.499+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index1/type
+2023-10-05 09:27:04.500+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index1/type
+2023-10-05 09:27:04.500+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.503+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.504+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index1/coherency_line_size
+2023-10-05 09:27:04.504+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index1/coherency_line_size
+2023-10-05 09:27:04.505+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index1/size
+2023-10-05 09:27:04.505+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu11/cache/index1/size
+2023-10-05 09:27:04.506+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/topology/core_id
+2023-10-05 09:27:04.511+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/topology/core_id
+2023-10-05 09:27:04.512+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/topology/physical_package_id
+2023-10-05 09:27:04.512+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/topology/physical_package_id
+2023-10-05 09:27:04.512+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cpu_capacity
+2023-10-05 09:27:04.513+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index2/level
+2023-10-05 09:27:04.514+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index2/level
+2023-10-05 09:27:04.514+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index2/type
+2023-10-05 09:27:04.515+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index2/type
+2023-10-05 09:27:04.516+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.517+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.518+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index2/coherency_line_size
+2023-10-05 09:27:04.520+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index2/coherency_line_size
+2023-10-05 09:27:04.521+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index2/size
+2023-10-05 09:27:04.522+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index2/size
+2023-10-05 09:27:04.522+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index0/level
+2023-10-05 09:27:04.523+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index0/level
+2023-10-05 09:27:04.524+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index0/type
+2023-10-05 09:27:04.524+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index0/type
+2023-10-05 09:27:04.525+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.527+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.528+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index0/coherency_line_size
+2023-10-05 09:27:04.528+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index0/coherency_line_size
+2023-10-05 09:27:04.529+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index0/size
+2023-10-05 09:27:04.529+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index0/size
+2023-10-05 09:27:04.530+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index3/level
+2023-10-05 09:27:04.530+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index3/level
+2023-10-05 09:27:04.530+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index3/type
+2023-10-05 09:27:04.531+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index3/type
+2023-10-05 09:27:04.531+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.531+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.532+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index3/coherency_line_size
+2023-10-05 09:27:04.532+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index3/coherency_line_size
+2023-10-05 09:27:04.533+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index3/size
+2023-10-05 09:27:04.533+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index3/size
+2023-10-05 09:27:04.534+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index1/level
+2023-10-05 09:27:04.534+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index1/level
+2023-10-05 09:27:04.535+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index1/type
+2023-10-05 09:27:04.535+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index1/type
+2023-10-05 09:27:04.536+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.536+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.536+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index1/coherency_line_size
+2023-10-05 09:27:04.537+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index1/coherency_line_size
+2023-10-05 09:27:04.537+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index1/size
+2023-10-05 09:27:04.537+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu2/cache/index1/size
+2023-10-05 09:27:04.538+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/topology/core_id
+2023-10-05 09:27:04.539+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/topology/core_id
+2023-10-05 09:27:04.539+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/topology/physical_package_id
+2023-10-05 09:27:04.540+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/topology/physical_package_id
+2023-10-05 09:27:04.540+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cpu_capacity
+2023-10-05 09:27:04.541+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index2/level
+2023-10-05 09:27:04.541+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index2/level
+2023-10-05 09:27:04.542+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index2/type
+2023-10-05 09:27:04.542+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index2/type
+2023-10-05 09:27:04.542+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.543+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.543+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index2/coherency_line_size
+2023-10-05 09:27:04.543+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index2/coherency_line_size
+2023-10-05 09:27:04.544+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index2/size
+2023-10-05 09:27:04.544+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index2/size
+2023-10-05 09:27:04.545+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index0/level
+2023-10-05 09:27:04.545+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index0/level
+2023-10-05 09:27:04.545+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index0/type
+2023-10-05 09:27:04.546+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index0/type
+2023-10-05 09:27:04.546+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.546+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.547+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index0/coherency_line_size
+2023-10-05 09:27:04.547+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index0/coherency_line_size
+2023-10-05 09:27:04.548+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index0/size
+2023-10-05 09:27:04.548+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index0/size
+2023-10-05 09:27:04.548+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index3/level
+2023-10-05 09:27:04.549+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index3/level
+2023-10-05 09:27:04.549+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index3/type
+2023-10-05 09:27:04.550+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index3/type
+2023-10-05 09:27:04.550+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.550+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.551+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index3/coherency_line_size
+2023-10-05 09:27:04.551+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index3/coherency_line_size
+2023-10-05 09:27:04.552+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index3/size
+2023-10-05 09:27:04.552+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index3/size
+2023-10-05 09:27:04.553+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index1/level
+2023-10-05 09:27:04.553+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index1/level
+2023-10-05 09:27:04.553+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index1/type
+2023-10-05 09:27:04.554+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index1/type
+2023-10-05 09:27:04.554+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.554+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.555+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index1/coherency_line_size
+2023-10-05 09:27:04.555+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index1/coherency_line_size
+2023-10-05 09:27:04.556+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index1/size
+2023-10-05 09:27:04.556+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu3/cache/index1/size
+2023-10-05 09:27:04.557+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/topology/core_id
+2023-10-05 09:27:04.562+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/topology/core_id
+2023-10-05 09:27:04.563+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/topology/physical_package_id
+2023-10-05 09:27:04.563+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/topology/physical_package_id
+2023-10-05 09:27:04.563+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cpu_capacity
+2023-10-05 09:27:04.564+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index2/level
+2023-10-05 09:27:04.564+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index2/level
+2023-10-05 09:27:04.565+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index2/type
+2023-10-05 09:27:04.565+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index2/type
+2023-10-05 09:27:04.565+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.565+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.566+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index2/coherency_line_size
+2023-10-05 09:27:04.566+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index2/coherency_line_size
+2023-10-05 09:27:04.567+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index2/size
+2023-10-05 09:27:04.567+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index2/size
+2023-10-05 09:27:04.568+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index0/level
+2023-10-05 09:27:04.568+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index0/level
+2023-10-05 09:27:04.569+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index0/type
+2023-10-05 09:27:04.569+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index0/type
+2023-10-05 09:27:04.570+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.571+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.571+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index0/coherency_line_size
+2023-10-05 09:27:04.571+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index0/coherency_line_size
+2023-10-05 09:27:04.572+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index0/size
+2023-10-05 09:27:04.572+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index0/size
+2023-10-05 09:27:04.573+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index3/level
+2023-10-05 09:27:04.573+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index3/level
+2023-10-05 09:27:04.574+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index3/type
+2023-10-05 09:27:04.574+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index3/type
+2023-10-05 09:27:04.574+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.575+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.575+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index3/coherency_line_size
+2023-10-05 09:27:04.575+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index3/coherency_line_size
+2023-10-05 09:27:04.576+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index3/size
+2023-10-05 09:27:04.576+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index3/size
+2023-10-05 09:27:04.577+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index1/level
+2023-10-05 09:27:04.577+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index1/level
+2023-10-05 09:27:04.577+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index1/type
+2023-10-05 09:27:04.578+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index1/type
+2023-10-05 09:27:04.578+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.578+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.583+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index1/coherency_line_size
+2023-10-05 09:27:04.583+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index1/coherency_line_size
+2023-10-05 09:27:04.583+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index1/size
+2023-10-05 09:27:04.584+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu4/cache/index1/size
+2023-10-05 09:27:04.585+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/topology/core_id
+2023-10-05 09:27:04.585+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/topology/core_id
+2023-10-05 09:27:04.586+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/topology/physical_package_id
+2023-10-05 09:27:04.586+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/topology/physical_package_id
+2023-10-05 09:27:04.586+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cpu_capacity
+2023-10-05 09:27:04.587+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index2/level
+2023-10-05 09:27:04.587+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index2/level
+2023-10-05 09:27:04.588+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index2/type
+2023-10-05 09:27:04.588+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index2/type
+2023-10-05 09:27:04.589+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.589+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.589+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index2/coherency_line_size
+2023-10-05 09:27:04.589+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index2/coherency_line_size
+2023-10-05 09:27:04.590+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index2/size
+2023-10-05 09:27:04.590+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index2/size
+2023-10-05 09:27:04.591+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index0/level
+2023-10-05 09:27:04.591+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index0/level
+2023-10-05 09:27:04.591+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index0/type
+2023-10-05 09:27:04.591+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index0/type
+2023-10-05 09:27:04.592+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.592+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.593+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index0/coherency_line_size
+2023-10-05 09:27:04.593+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index0/coherency_line_size
+2023-10-05 09:27:04.593+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index0/size
+2023-10-05 09:27:04.594+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index0/size
+2023-10-05 09:27:04.594+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index3/level
+2023-10-05 09:27:04.594+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index3/level
+2023-10-05 09:27:04.595+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index3/type
+2023-10-05 09:27:04.595+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index3/type
+2023-10-05 09:27:04.595+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.595+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.596+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index3/coherency_line_size
+2023-10-05 09:27:04.596+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index3/coherency_line_size
+2023-10-05 09:27:04.596+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index3/size
+2023-10-05 09:27:04.597+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index3/size
+2023-10-05 09:27:04.597+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index1/level
+2023-10-05 09:27:04.597+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index1/level
+2023-10-05 09:27:04.598+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index1/type
+2023-10-05 09:27:04.598+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index1/type
+2023-10-05 09:27:04.598+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.599+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.599+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index1/coherency_line_size
+2023-10-05 09:27:04.599+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index1/coherency_line_size
+2023-10-05 09:27:04.600+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index1/size
+2023-10-05 09:27:04.600+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu5/cache/index1/size
+2023-10-05 09:27:04.601+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/topology/core_id
+2023-10-05 09:27:04.603+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/topology/core_id
+2023-10-05 09:27:04.604+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/topology/physical_package_id
+2023-10-05 09:27:04.604+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/topology/physical_package_id
+2023-10-05 09:27:04.604+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cpu_capacity
+2023-10-05 09:27:04.605+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index2/level
+2023-10-05 09:27:04.605+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index2/level
+2023-10-05 09:27:04.606+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index2/type
+2023-10-05 09:27:04.606+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index2/type
+2023-10-05 09:27:04.617+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.617+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.618+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index2/coherency_line_size
+2023-10-05 09:27:04.618+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index2/coherency_line_size
+2023-10-05 09:27:04.619+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index2/size
+2023-10-05 09:27:04.619+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index2/size
+2023-10-05 09:27:04.619+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index0/level
+2023-10-05 09:27:04.620+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index0/level
+2023-10-05 09:27:04.621+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index0/type
+2023-10-05 09:27:04.621+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index0/type
+2023-10-05 09:27:04.622+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.622+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.622+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index0/coherency_line_size
+2023-10-05 09:27:04.623+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index0/coherency_line_size
+2023-10-05 09:27:04.623+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index0/size
+2023-10-05 09:27:04.623+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index0/size
+2023-10-05 09:27:04.624+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index3/level
+2023-10-05 09:27:04.624+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index3/level
+2023-10-05 09:27:04.625+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index3/type
+2023-10-05 09:27:04.625+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index3/type
+2023-10-05 09:27:04.625+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.625+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.626+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index3/coherency_line_size
+2023-10-05 09:27:04.626+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index3/coherency_line_size
+2023-10-05 09:27:04.627+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index3/size
+2023-10-05 09:27:04.628+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index3/size
+2023-10-05 09:27:04.629+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index1/level
+2023-10-05 09:27:04.629+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index1/level
+2023-10-05 09:27:04.630+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index1/type
+2023-10-05 09:27:04.630+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index1/type
+2023-10-05 09:27:04.631+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.631+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.631+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index1/coherency_line_size
+2023-10-05 09:27:04.631+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index1/coherency_line_size
+2023-10-05 09:27:04.632+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index1/size
+2023-10-05 09:27:04.632+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu6/cache/index1/size
+2023-10-05 09:27:04.633+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/topology/core_id
+2023-10-05 09:27:04.636+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/topology/core_id
+2023-10-05 09:27:04.637+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/topology/physical_package_id
+2023-10-05 09:27:04.637+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/topology/physical_package_id
+2023-10-05 09:27:04.638+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cpu_capacity
+2023-10-05 09:27:04.639+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index2/level
+2023-10-05 09:27:04.640+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index2/level
+2023-10-05 09:27:04.640+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index2/type
+2023-10-05 09:27:04.641+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index2/type
+2023-10-05 09:27:04.644+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.645+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.647+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index2/coherency_line_size
+2023-10-05 09:27:04.647+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index2/coherency_line_size
+2023-10-05 09:27:04.648+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index2/size
+2023-10-05 09:27:04.648+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index2/size
+2023-10-05 09:27:04.648+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index0/level
+2023-10-05 09:27:04.649+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index0/level
+2023-10-05 09:27:04.649+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index0/type
+2023-10-05 09:27:04.649+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index0/type
+2023-10-05 09:27:04.650+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.650+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.650+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index0/coherency_line_size
+2023-10-05 09:27:04.651+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index0/coherency_line_size
+2023-10-05 09:27:04.651+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index0/size
+2023-10-05 09:27:04.651+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index0/size
+2023-10-05 09:27:04.654+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index3/level
+2023-10-05 09:27:04.654+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index3/level
+2023-10-05 09:27:04.655+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index3/type
+2023-10-05 09:27:04.655+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index3/type
+2023-10-05 09:27:04.656+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.656+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.658+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index3/coherency_line_size
+2023-10-05 09:27:04.658+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index3/coherency_line_size
+2023-10-05 09:27:04.659+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index3/size
+2023-10-05 09:27:04.659+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index3/size
+2023-10-05 09:27:04.660+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index1/level
+2023-10-05 09:27:04.660+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index1/level
+2023-10-05 09:27:04.660+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index1/type
+2023-10-05 09:27:04.660+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index1/type
+2023-10-05 09:27:04.661+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.661+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.661+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index1/coherency_line_size
+2023-10-05 09:27:04.661+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index1/coherency_line_size
+2023-10-05 09:27:04.662+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index1/size
+2023-10-05 09:27:04.662+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu7/cache/index1/size
+2023-10-05 09:27:04.663+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/topology/core_id
+2023-10-05 09:27:04.664+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/topology/core_id
+2023-10-05 09:27:04.664+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/topology/physical_package_id
+2023-10-05 09:27:04.664+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/topology/physical_package_id
+2023-10-05 09:27:04.665+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cpu_capacity
+2023-10-05 09:27:04.666+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index2/level
+2023-10-05 09:27:04.666+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index2/level
+2023-10-05 09:27:04.667+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index2/type
+2023-10-05 09:27:04.667+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index2/type
+2023-10-05 09:27:04.667+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.667+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.668+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index2/coherency_line_size
+2023-10-05 09:27:04.668+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index2/coherency_line_size
+2023-10-05 09:27:04.668+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index2/size
+2023-10-05 09:27:04.668+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index2/size
+2023-10-05 09:27:04.669+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index0/level
+2023-10-05 09:27:04.669+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index0/level
+2023-10-05 09:27:04.669+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index0/type
+2023-10-05 09:27:04.670+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index0/type
+2023-10-05 09:27:04.670+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.670+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.671+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index0/coherency_line_size
+2023-10-05 09:27:04.671+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index0/coherency_line_size
+2023-10-05 09:27:04.671+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index0/size
+2023-10-05 09:27:04.671+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index0/size
+2023-10-05 09:27:04.672+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index3/level
+2023-10-05 09:27:04.672+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index3/level
+2023-10-05 09:27:04.672+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index3/type
+2023-10-05 09:27:04.673+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index3/type
+2023-10-05 09:27:04.673+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.673+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.673+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index3/coherency_line_size
+2023-10-05 09:27:04.674+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index3/coherency_line_size
+2023-10-05 09:27:04.674+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index3/size
+2023-10-05 09:27:04.674+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index3/size
+2023-10-05 09:27:04.674+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index1/level
+2023-10-05 09:27:04.675+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index1/level
+2023-10-05 09:27:04.675+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index1/type
+2023-10-05 09:27:04.675+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index1/type
+2023-10-05 09:27:04.675+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.675+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.676+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index1/coherency_line_size
+2023-10-05 09:27:04.676+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index1/coherency_line_size
+2023-10-05 09:27:04.676+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index1/size
+2023-10-05 09:27:04.676+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu8/cache/index1/size
+2023-10-05 09:27:04.677+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/topology/core_id
+2023-10-05 09:27:04.678+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/topology/core_id
+2023-10-05 09:27:04.678+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/topology/physical_package_id
+2023-10-05 09:27:04.678+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/topology/physical_package_id
+2023-10-05 09:27:04.679+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cpu_capacity
+2023-10-05 09:27:04.680+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index2/level
+2023-10-05 09:27:04.680+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index2/level
+2023-10-05 09:27:04.680+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index2/type
+2023-10-05 09:27:04.681+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index2/type
+2023-10-05 09:27:04.681+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.681+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index2/ways_of_associativity
+2023-10-05 09:27:04.681+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index2/coherency_line_size
+2023-10-05 09:27:04.681+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index2/coherency_line_size
+2023-10-05 09:27:04.682+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index2/size
+2023-10-05 09:27:04.682+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index2/size
+2023-10-05 09:27:04.682+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index0/level
+2023-10-05 09:27:04.683+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index0/level
+2023-10-05 09:27:04.683+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index0/type
+2023-10-05 09:27:04.683+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index0/type
+2023-10-05 09:27:04.683+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.684+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index0/ways_of_associativity
+2023-10-05 09:27:04.684+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index0/coherency_line_size
+2023-10-05 09:27:04.684+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index0/coherency_line_size
+2023-10-05 09:27:04.684+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index0/size
+2023-10-05 09:27:04.685+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index0/size
+2023-10-05 09:27:04.685+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index3/level
+2023-10-05 09:27:04.686+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index3/level
+2023-10-05 09:27:04.686+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index3/type
+2023-10-05 09:27:04.686+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index3/type
+2023-10-05 09:27:04.686+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.686+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index3/ways_of_associativity
+2023-10-05 09:27:04.687+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index3/coherency_line_size
+2023-10-05 09:27:04.687+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index3/coherency_line_size
+2023-10-05 09:27:04.687+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index3/size
+2023-10-05 09:27:04.687+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index3/size
+2023-10-05 09:27:04.687+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index1/level
+2023-10-05 09:27:04.688+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index1/level
+2023-10-05 09:27:04.688+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index1/type
+2023-10-05 09:27:04.688+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index1/type
+2023-10-05 09:27:04.688+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.688+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index1/ways_of_associativity
+2023-10-05 09:27:04.689+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index1/coherency_line_size
+2023-10-05 09:27:04.689+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index1/coherency_line_size
+2023-10-05 09:27:04.690+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index1/size
+2023-10-05 09:27:04.690+00:00 | main | DEBUG | FileUtil | Reading file /sys/devices/system/cpu/cpu9/cache/index1/size
+2023-10-05 09:27:04.700+00:00 | main | INFO  | Besu | 
+####################################################################################################
+#                                                                                                  #
+# Besu version 23.7.2                                                                              #
+#                                                                                                  #
+# Configuration:                                                                                   #
+# Network: Custom genesis file specified                                                           #
+# Network Id: 1337                                                                                 #
+# Data storage: Forest                                                                             #
+# Sync mode: Full                                                                                  #
+# RPC HTTP APIs: ADMIN,IBFT,QBFT,CLIQUE,ETH,NET,TXPOOL,WEB3                                        #
+# RPC HTTP port: 8545                                                                              #
+#                                                                                                  #
+# Host:                                                                                            #
+# Java: openjdk-java-17                                                                            #
+# Maximum heap size: 3.86 GB                                                                       #
+# OS: linux-x86_64                                                                                 #
+# glibc: 2.35                                                                                      #
+# jemalloc: 5.2.1-0-gea6b3e973b477b8061e0076bb257dbd7f3faa756                                      #
+# Total memory: 15.45 GB                                                                           #
+# CPU cores: 12                                                                                    #
+#                                                                                                  #
+####################################################################################################
+2023-10-05 09:27:04.701+00:00 | main | INFO  | Besu | Connecting to 0 static nodes.
+2023-10-05 09:27:04.701+00:00 | main | INFO  | Besu | Security Module: localfile
+2023-10-05 09:27:04.704+00:00 | main | DEBUG | NativeLibrary | Looking for library 'eth_pairings'
+2023-10-05 09:27:04.704+00:00 | main | DEBUG | NativeLibrary | Adding paths from jna.library.path: null
+2023-10-05 09:27:04.704+00:00 | main | DEBUG | NativeLibrary | Trying libeth_pairings.so
+2023-10-05 09:27:04.705+00:00 | main | DEBUG | NativeLibrary | Loading failed with message: libeth_pairings.so: cannot open shared object file: No such file or directory
+2023-10-05 09:27:04.705+00:00 | main | DEBUG | NativeLibrary | Adding system paths: [/usr/lib/x86_64-linux-gnu, /lib/x86_64-linux-gnu, /usr/lib64, /lib64, /usr/lib, /lib]
+2023-10-05 09:27:04.705+00:00 | main | DEBUG | NativeLibrary | Trying libeth_pairings.so
+2023-10-05 09:27:04.705+00:00 | main | DEBUG | NativeLibrary | Loading failed with message: libeth_pairings.so: cannot open shared object file: No such file or directory
+2023-10-05 09:27:04.706+00:00 | main | DEBUG | NativeLibrary | Looking for version variants
+2023-10-05 09:27:04.708+00:00 | main | DEBUG | Native | Looking in classpath from jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487 for eth_pairings
+2023-10-05 09:27:04.709+00:00 | main | DEBUG | Native | Found library resource at jar:file:/opt/besu/lib/bls12-381-0.8.1.jar!/linux-x86-64/libeth_pairings.so
+2023-10-05 09:27:04.710+00:00 | main | DEBUG | Native | Extracting library to /opt/besu/.cache/JNA/temp/jna14098820261791310470.tmp
+2023-10-05 09:27:04.819+00:00 | main | DEBUG | NativeLibrary | Found library 'eth_pairings' at /opt/besu/.cache/JNA/temp/jna14098820261791310470.tmp
+2023-10-05 09:27:04.820+00:00 | main | INFO  | Besu | Using the native implementation of alt bn128
+2023-10-05 09:27:04.822+00:00 | main | DEBUG | NativeLibrary | Looking for library 'eth_arithmetic'
+2023-10-05 09:27:04.822+00:00 | main | DEBUG | NativeLibrary | Adding paths from jna.library.path: null
+2023-10-05 09:27:04.823+00:00 | main | DEBUG | NativeLibrary | Trying libeth_arithmetic.so
+2023-10-05 09:27:04.823+00:00 | main | DEBUG | NativeLibrary | Loading failed with message: libeth_arithmetic.so: cannot open shared object file: No such file or directory
+2023-10-05 09:27:04.823+00:00 | main | DEBUG | NativeLibrary | Adding system paths: [/usr/lib/x86_64-linux-gnu, /lib/x86_64-linux-gnu, /usr/lib64, /lib64, /usr/lib, /lib]
+2023-10-05 09:27:04.824+00:00 | main | DEBUG | NativeLibrary | Trying libeth_arithmetic.so
+2023-10-05 09:27:04.824+00:00 | main | DEBUG | NativeLibrary | Loading failed with message: libeth_arithmetic.so: cannot open shared object file: No such file or directory
+2023-10-05 09:27:04.824+00:00 | main | DEBUG | NativeLibrary | Looking for version variants
+2023-10-05 09:27:04.827+00:00 | main | DEBUG | Native | Looking in classpath from jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487 for eth_arithmetic
+2023-10-05 09:27:04.828+00:00 | main | DEBUG | Native | Found library resource at jar:file:/opt/besu/lib/arithmetic-0.8.1.jar!/linux-x86-64/libeth_arithmetic.so
+2023-10-05 09:27:04.829+00:00 | main | DEBUG | Native | Extracting library to /opt/besu/.cache/JNA/temp/jna4258996798467031808.tmp
+2023-10-05 09:27:04.907+00:00 | main | DEBUG | NativeLibrary | Found library 'eth_arithmetic' at /opt/besu/.cache/JNA/temp/jna4258996798467031808.tmp
+2023-10-05 09:27:04.908+00:00 | main | INFO  | Besu | Using the native implementation of modexp
+2023-10-05 09:27:04.908+00:00 | main | INFO  | Besu | Using the native implementation of the signature algorithm
+2023-10-05 09:27:04.910+00:00 | main | DEBUG | NativeLibrary | Looking for library 'blake2bf'
+2023-10-05 09:27:04.910+00:00 | main | DEBUG | NativeLibrary | Adding paths from jna.library.path: null
+2023-10-05 09:27:04.910+00:00 | main | DEBUG | NativeLibrary | Trying libblake2bf.so
+2023-10-05 09:27:04.911+00:00 | main | DEBUG | NativeLibrary | Loading failed with message: libblake2bf.so: cannot open shared object file: No such file or directory
+2023-10-05 09:27:04.911+00:00 | main | DEBUG | NativeLibrary | Adding system paths: [/usr/lib/x86_64-linux-gnu, /lib/x86_64-linux-gnu, /usr/lib64, /lib64, /usr/lib, /lib]
+2023-10-05 09:27:04.911+00:00 | main | DEBUG | NativeLibrary | Trying libblake2bf.so
+2023-10-05 09:27:04.911+00:00 | main | DEBUG | NativeLibrary | Loading failed with message: libblake2bf.so: cannot open shared object file: No such file or directory
+2023-10-05 09:27:04.912+00:00 | main | DEBUG | NativeLibrary | Looking for version variants
+2023-10-05 09:27:04.914+00:00 | main | DEBUG | Native | Looking in classpath from jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487 for blake2bf
+2023-10-05 09:27:04.915+00:00 | main | DEBUG | Native | Found library resource at jar:file:/opt/besu/lib/blake2bf-0.8.1.jar!/linux-x86-64/libblake2bf.so
+2023-10-05 09:27:05.100+00:00 | main | DEBUG | Native | Extracting library to /opt/besu/.cache/JNA/temp/jna4710266928944344720.tmp
+2023-10-05 09:27:05.101+00:00 | main | DEBUG | NativeLibrary | Found library 'blake2bf' at /opt/besu/.cache/JNA/temp/jna4710266928944344720.tmp
+2023-10-05 09:27:05.101+00:00 | main | INFO  | Besu | Using the native implementation of the blake2bf algorithm
+2023-10-05 09:27:05.360+00:00 | main | INFO  | KeyPairUtil | Loaded public key 0x64308f3a0a47e3d11428952237197fd3622ac76baf36e97b1e589359317783ce64ec5f61b8a6153c83661edf488fa6466d237f9031db6695ead0dd2edd251b22 from /opt/besu/data/key
+2023-10-05 09:27:05.600+00:00 | main | INFO  | ProtocolScheduleBuilder | Protocol schedule created with milestones: [Berlin:0]
+2023-10-05 09:27:05.656+00:00 | main | INFO  | RocksDBKeyValueStorageFactory | No existing database detected at /opt/besu/data. Using version 1
+2023-10-05 09:27:05.721+00:00 | main | DEBUG | RocksDBKeyValueStorageFactory | FOREST mode detected, using TransactionDB.
+2023-10-05 09:27:06.572+00:00 | main | INFO  | TransactionPoolFactory | Enabling transaction pool
+2023-10-05 09:27:06.602+00:00 | main | INFO  | BesuControllerBuilder | TTD difficulty is not present, creating initial sync phase for PoW
+2023-10-05 09:27:06.661+00:00 | main | DEBUG | BesuPluginContextImpl | Plugin startup complete.
+2023-10-05 09:27:06.668+00:00 | main | INFO  | RunnerBuilder | Detecting NAT service.
+2023-10-05 09:27:06.733+00:00 | main | DEBUG | RlpxAgent | Using default NettyConnectionInitializer
+2023-10-05 09:27:06.741+00:00 | main | DEBUG | NioEventLoop | -Dio.netty.noKeySetOptimization: false
+2023-10-05 09:27:06.742+00:00 | main | DEBUG | NioEventLoop | -Dio.netty.selectorAutoRebuildThreshold: 512
+2023-10-05 09:27:06.762+00:00 | main | DEBUG | DefaultP2PNetwork | setting peerLowerBound 25
+2023-10-05 09:27:06.972+00:00 | main | INFO  | Runner | Starting external services ... 
+2023-10-05 09:27:06.973+00:00 | main | INFO  | MetricsHttpService | Starting metrics http service on 0.0.0.0:9091
+2023-10-05 09:27:07.025+00:00 | main | DEBUG | Brotli | brotli4j not in the classpath; Brotli support will be unavailable.
+2023-10-05 09:27:07.108+00:00 | vert.x-eventloop-thread-1 | DEBUG | PooledByteBufAllocator | -Dio.netty.allocator.numHeapArenas: 24
+2023-10-05 09:27:07.109+00:00 | vert.x-eventloop-thread-1 | DEBUG | PooledByteBufAllocator | -Dio.netty.allocator.numDirectArenas: 24
+2023-10-05 09:27:07.109+00:00 | vert.x-eventloop-thread-1 | DEBUG | PooledByteBufAllocator | -Dio.netty.allocator.pageSize: 8192
+2023-10-05 09:27:07.110+00:00 | vert.x-eventloop-thread-1 | DEBUG | PooledByteBufAllocator | -Dio.netty.allocator.maxOrder: 9
+2023-10-05 09:27:07.110+00:00 | vert.x-eventloop-thread-1 | DEBUG | PooledByteBufAllocator | -Dio.netty.allocator.chunkSize: 4194304
+2023-10-05 09:27:07.110+00:00 | vert.x-eventloop-thread-1 | DEBUG | PooledByteBufAllocator | -Dio.netty.allocator.smallCacheSize: 256
+2023-10-05 09:27:07.110+00:00 | vert.x-eventloop-thread-1 | DEBUG | PooledByteBufAllocator | -Dio.netty.allocator.normalCacheSize: 64
+2023-10-05 09:27:07.111+00:00 | vert.x-eventloop-thread-1 | DEBUG | PooledByteBufAllocator | -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2023-10-05 09:27:07.112+00:00 | vert.x-eventloop-thread-1 | DEBUG | PooledByteBufAllocator | -Dio.netty.allocator.cacheTrimInterval: 8192
+2023-10-05 09:27:07.123+00:00 | vert.x-eventloop-thread-1 | DEBUG | PooledByteBufAllocator | -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2023-10-05 09:27:07.125+00:00 | vert.x-eventloop-thread-1 | DEBUG | PooledByteBufAllocator | -Dio.netty.allocator.useCacheForAllThreads: false
+2023-10-05 09:27:07.125+00:00 | vert.x-eventloop-thread-1 | DEBUG | PooledByteBufAllocator | -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2023-10-05 09:27:07.180+00:00 | vert.x-eventloop-thread-1 | DEBUG | DefaultChannelId | -Dio.netty.processId: 1 (auto-detected)
+2023-10-05 09:27:07.186+00:00 | vert.x-eventloop-thread-1 | DEBUG | DefaultChannelId | -Dio.netty.machineId: 02:42:ac:ff:fe:10:ef:0a (auto-detected)
+2023-10-05 09:27:07.249+00:00 | vert.x-eventloop-thread-1 | DEBUG | ByteBufUtil | -Dio.netty.allocator.type: pooled
+2023-10-05 09:27:07.254+00:00 | vert.x-eventloop-thread-1 | DEBUG | ByteBufUtil | -Dio.netty.threadLocalDirectBufferSize: 0
+2023-10-05 09:27:07.255+00:00 | vert.x-eventloop-thread-1 | DEBUG | ByteBufUtil | -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2023-10-05 09:27:07.298+00:00 | vert.x-eventloop-thread-1 | INFO  | MetricsHttpService | Metrics service started and listening on 0.0.0.0:9091
+2023-10-05 09:27:07.299+00:00 | main | INFO  | JsonRpcHttpService | Starting JSON-RPC service on 0.0.0.0:8545
+2023-10-05 09:27:07.299+00:00 | main | DEBUG | JsonRpcHttpService | max number of active connections 80
+2023-10-05 09:27:07.343+00:00 | vert.x-eventloop-thread-1 | INFO  | JsonRpcHttpService | JSON-RPC service started and listening on 0.0.0.0:8545
+2023-10-05 09:27:07.347+00:00 | main | INFO  | WebSocketService | Starting Websocket service on 0.0.0.0:8546
+2023-10-05 09:27:07.367+00:00 | vert.x-eventloop-thread-1 | INFO  | WebSocketService | Websocket service started and listening on 0.0.0.0:8546
+2023-10-05 09:27:07.372+00:00 | main | INFO  | AutoTransactionLogBloomCachingService | Starting auto transaction log bloom caching service.
+2023-10-05 09:27:07.373+00:00 | main | INFO  | LogBloomCacheMetadata | Lookup cache metadata file in data directory: /opt/besu/data/caches
+2023-10-05 09:27:07.396+00:00 | main | DEBUG | BesuPluginContextImpl | Plugin startup complete.
+2023-10-05 09:27:07.406+00:00 | main | INFO  | Runner | Starting Ethereum main loop ... 
+2023-10-05 09:27:07.406+00:00 | main | INFO  | NatService | No NAT environment detected so no service could be started
+2023-10-05 09:27:07.406+00:00 | main | INFO  | NetworkRunner | Starting Network.
+2023-10-05 09:27:07.439+00:00 | nioEventLoopGroup-2-1 | INFO  | RlpxAgent | P2P RLPx agent started and listening on /0.0.0.0:30303.
+2023-10-05 09:27:07.439+00:00 | main | INFO  | PeerDiscoveryAgent | Starting peer discovery agent on host=0.0.0.0, port=30303
+2023-10-05 09:27:07.499+00:00 | vert.x-eventloop-thread-1 | INFO  | VertxPeerDiscoveryAgent | Started peer discovery agent successfully, on effective host=0.0.0.0 and port=30303
+2023-10-05 09:27:07.500+00:00 | vert.x-eventloop-thread-1 | INFO  | PeerDiscoveryAgent | P2P peer discovery agent started and listening on /0.0.0.0:30303
+2023-10-05 09:27:07.568+00:00 | vert.x-eventloop-thread-1 | INFO  | PeerDiscoveryAgent | Writing node record to disk. NodeRecord{seq=1, publicKey=0x0264308f3a0a47e3d11428952237197fd3622ac76baf36e97b1e589359317783ce, udpAddress=Optional[/127.0.0.1:30303], tcpAddress=Optional[/127.0.0.1:30303], asBase64=-Je4QEg7qh-IFK1PMAD57LfW5lexDiI7BGhrKm8dkuLt70ssEMGHk0wSsrYko9-jeB7Zr6i-XMs1YvIaQ9XbrghrgJMBg2V0aMfGhM-wxsuAgmlkgnY0gmlwhH8AAAGJc2VjcDI1NmsxoQJkMI86Ckfj0RQolSI3GX_TYirHa6826XseWJNZMXeDzoN0Y3CCdl-DdWRwgnZf, nodeId=0x21825f7e67cb646053892b93a73011e90ebffab52bcb1ff4379823f47c6697a0, customFields={tcp=30303, udp=30303, ip=0x7f000001, eth=[[0xcfb0c6cb, 0x]], id=V4, secp256k1=0x0264308f3a0a47e3d11428952237197fd3622ac76baf36e97b1e589359317783ce}}
+2023-10-05 09:27:07.600+00:00 | vert.x-eventloop-thread-1 | DEBUG | PeerDiscoveryController | Starting with filterOnEnrForkId = false
+2023-10-05 09:27:07.615+00:00 | vert.x-eventloop-thread-1 | DEBUG | RecursivePeerRefreshState | Start peer search.
+2023-10-05 09:27:07.616+00:00 | vert.x-eventloop-thread-1 | DEBUG | RecursivePeerRefreshState | INITIAL PEERS: [DiscoveryPeer{status=known, enode=enode://b36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b@172.16.239.8:30303, firstDiscovered=0, lastContacted=0, lastSeen=0}]
+2023-10-05 09:27:07.619+00:00 | vert.x-eventloop-thread-1 | DEBUG | RecursivePeerRefreshState | Initiating bonding round with 1 candidates
+2023-10-05 09:27:07.641+00:00 | main | INFO  | DefaultP2PNetwork | Enode URL enode://64308f3a0a47e3d11428952237197fd3622ac76baf36e97b1e589359317783ce64ec5f61b8a6153c83661edf488fa6466d237f9031db6695ead0dd2edd251b22@127.0.0.1:30303
+2023-10-05 09:27:07.642+00:00 | main | INFO  | DefaultP2PNetwork | Node address 0xa73011e90ebffab52bcb1ff4379823f47c6697a0
+2023-10-05 09:27:07.672+00:00 | main | INFO  | NetworkRunner | Supported capabilities: [eth/62, eth/63, eth/64, eth/65, eth/66, eth/67, eth/68], [istanbul/100], [snap/1]
+2023-10-05 09:27:07.673+00:00 | main | INFO  | DefaultSynchronizer | Starting synchronizer.
+2023-10-05 09:27:07.675+00:00 | main | INFO  | TransactionPoolFactory | Enabling transaction handling following initial sync
+2023-10-05 09:27:07.677+00:00 | main | INFO  | FullSyncDownloader | Starting full sync.
+2023-10-05 09:27:07.677+00:00 | main | INFO  | FullSyncTargetManager | Unable to find sync target. Currently checking 0 peers for usefulness
+2023-10-05 09:27:07.680+00:00 | vert.x-eventloop-thread-1 | DEBUG | AbstractByteBuf | -Dio.netty.buffer.checkAccessible: true
+2023-10-05 09:27:07.680+00:00 | vert.x-eventloop-thread-1 | DEBUG | AbstractByteBuf | -Dio.netty.buffer.checkBounds: true
+2023-10-05 09:27:07.682+00:00 | vert.x-eventloop-thread-1 | DEBUG | ResourceLeakDetectorFactory | Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@59f167b4
+2023-10-05 09:27:07.684+00:00 | main | DEBUG | WaitForPeerTask | Waiting for new peer connection. 0 peers currently connected.
+2023-10-05 09:27:07.694+00:00 | vert.x-eventloop-thread-1 | DEBUG | Recycler | -Dio.netty.recycler.maxCapacityPerThread: 4096
+2023-10-05 09:27:07.695+00:00 | vert.x-eventloop-thread-1 | DEBUG | Recycler | -Dio.netty.recycler.ratio: 8
+2023-10-05 09:27:07.695+00:00 | vert.x-eventloop-thread-1 | DEBUG | Recycler | -Dio.netty.recycler.chunkSize: 32
+2023-10-05 09:27:07.695+00:00 | vert.x-eventloop-thread-1 | DEBUG | Recycler | -Dio.netty.recycler.blocking: false
+2023-10-05 09:27:07.695+00:00 | vert.x-eventloop-thread-1 | DEBUG | Recycler | -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2023-10-05 09:27:07.715+00:00 | main | INFO  | Runner | Ethereum main loop is up.
+2023-10-05 09:27:07.718+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftBlockHeightManager | Starting new round 0
+2023-10-05 09:27:07.789+00:00 | vert.x-eventloop-thread-1 | DEBUG | RecursivePeerRefreshState | Initiating neighbours round with 1 candidates from 1 tracked nodes
+2023-10-05 09:27:07.979+00:00 | nioEventLoopGroup-3-1 | DEBUG | HandshakeHandlerOutbound | Wrote initial crypto handshake message to /172.16.239.8:30303.
+2023-10-05 09:27:08.267+00:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractPeerConnection | New PeerConnection ([Connection with hashCode 1141708812 with peer 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b inboundInitiated false initAt 1696498028258]) established with peer 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b
+2023-10-05 09:27:08.267+00:00 | nioEventLoopGroup-3-2 | DEBUG | AbstractPeerConnection | New PeerConnection ([Connection with hashCode 1723417609 with peer 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b inboundInitiated true initAt 1696498028258]) established with peer 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b
+2023-10-05 09:27:08.272+00:00 | nioEventLoopGroup-3-1 | DEBUG | RlpxAgent | Outbound connection established to peer: 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b
+2023-10-05 09:27:08.337+00:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Received status message from PeerId 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b, reputation PeerReputation 100, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode 1141708812 with peer 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b inboundInitiated false initAt 1696498028258], enode enode://b36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b@172.16.239.8:30303: StatusMessage{code=0, size=80} with connection [Connection with hashCode 1141708812 with peer 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b inboundInitiated false initAt 1696498028258]
+2023-10-05 09:27:08.337+00:00 | nioEventLoopGroup-3-2 | DEBUG | EthProtocolManager | Received status message from PeerId 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b, reputation PeerReputation 100, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode 1141708812 with peer 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b inboundInitiated false initAt 1696498028258], enode enode://b36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b@172.16.239.8:30303: StatusMessage{code=0, size=80} with connection [Connection with hashCode 1723417609 with peer 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b inboundInitiated true initAt 1696498028258]
+2023-10-05 09:27:08.342+00:00 | nioEventLoopGroup-3-2 | DEBUG | ChainHeadTracker | Requesting chain head info from PeerId 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b, reputation PeerReputation 100, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode 1723417609 with peer 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b inboundInitiated true initAt 1696498028258], enode enode://b36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b@172.16.239.8:30303?discport=0
+2023-10-05 09:27:08.348+00:00 | nioEventLoopGroup-3-2 | DEBUG | GetHeadersFromPeerByHashTask | Requesting 1 headers (hash 0xd6a6acfc01db...) from peer PeerId 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b, reputation PeerReputation 100, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode 1723417609 with peer 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b inboundInitiated true initAt 1696498028258], enode enode://b36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b@172.16.239.8:30303?discport=0.
+2023-10-05 09:27:08.355+00:00 | nioEventLoopGroup-3-2 | DEBUG | WaitForPeerTask | Finished waiting for peer connection.
+2023-10-05 09:27:08.355+00:00 | nioEventLoopGroup-3-2 | INFO  | FullSyncTargetManager | Unable to find sync target. Currently checking 1 peers for usefulness
+2023-10-05 09:27:08.356+00:00 | nioEventLoopGroup-3-2 | DEBUG | WaitForPeerTask | Waiting for new peer connection. 1 peers currently connected.
+2023-10-05 09:27:08.367+00:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 1 of 1 headers requested from peer PeerId 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b, reputation PeerReputation 100, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode 1141708812 with peer 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b inboundInitiated false initAt 1696498028258], enode enode://b36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b@172.16.239.8:30303
+2023-10-05 09:27:08.377+00:00 | nioEventLoopGroup-3-1 | DEBUG | ChainHeadTracker | Retrieved chain head info 0 (0xd6a6acfc01db432b0175b337187bc59ae01c851a6e1c471abca242a017d287f7) from PeerId 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b, reputation PeerReputation 100, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode 1141708812 with peer 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b inboundInitiated false initAt 1696498028258], enode enode://b36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b@172.16.239.8:30303
+2023-10-05 09:27:09.813+00:00 | vert.x-eventloop-thread-1 | DEBUG | RecursivePeerRefreshState | Received neighbours packet with 3 neighbours from enode://b36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b@172.16.239.8:30303
+2023-10-05 09:27:09.814+00:00 | vert.x-eventloop-thread-1 | DEBUG | RecursivePeerRefreshState | Initiating bonding round with 2 candidates
+2023-10-05 09:27:09.828+00:00 | vert.x-eventloop-thread-1 | DEBUG | RecursivePeerRefreshState | Initiating neighbours round with 2 candidates from 3 tracked nodes
+2023-10-05 09:27:09.850+00:00 | nioEventLoopGroup-3-3 | DEBUG | HandshakeHandlerOutbound | Wrote initial crypto handshake message to /172.16.239.9:30303.
+2023-10-05 09:27:09.850+00:00 | nioEventLoopGroup-3-4 | DEBUG | HandshakeHandlerOutbound | Wrote initial crypto handshake message to /172.16.239.11:30303.
+2023-10-05 09:27:09.858+00:00 | vert.x-eventloop-thread-1 | DEBUG | RecursivePeerRefreshState | Received neighbours packet with 3 neighbours from enode://319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000@172.16.239.11:30303
+2023-10-05 09:27:09.894+00:00 | nioEventLoopGroup-3-4 | DEBUG | AbstractPeerConnection | New PeerConnection ([Connection with hashCode 514909241 with peer 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000 inboundInitiated false initAt 1696498029894]) established with peer 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000
+2023-10-05 09:27:09.895+00:00 | nioEventLoopGroup-3-4 | DEBUG | RlpxAgent | Outbound connection established to peer: 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000
+2023-10-05 09:27:09.896+00:00 | nioEventLoopGroup-3-3 | DEBUG | AbstractPeerConnection | New PeerConnection ([Connection with hashCode -1266371968 with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d inboundInitiated false initAt 1696498029896]) established with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d
+2023-10-05 09:27:09.897+00:00 | nioEventLoopGroup-3-5 | DEBUG | AbstractPeerConnection | New PeerConnection ([Connection with hashCode -1483897137 with peer 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000 inboundInitiated true initAt 1696498029896]) established with peer 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000
+2023-10-05 09:27:09.899+00:00 | nioEventLoopGroup-3-3 | DEBUG | RlpxAgent | Outbound connection established to peer: 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d
+2023-10-05 09:27:09.900+00:00 | nioEventLoopGroup-3-4 | DEBUG | EthProtocolManager | Received status message from PeerId 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000, reputation PeerReputation 100, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode 514909241 with peer 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000 inboundInitiated false initAt 1696498029894], enode enode://319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000@172.16.239.11:30303: StatusMessage{code=0, size=80} with connection [Connection with hashCode 514909241 with peer 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000 inboundInitiated false initAt 1696498029894]
+2023-10-05 09:27:09.901+00:00 | nioEventLoopGroup-3-6 | DEBUG | AbstractPeerConnection | New PeerConnection ([Connection with hashCode -364275541 with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d inboundInitiated true initAt 1696498029901]) established with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d
+2023-10-05 09:27:09.905+00:00 | nioEventLoopGroup-3-3 | DEBUG | EthProtocolManager | Received status message from PeerId 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d, reputation PeerReputation 100, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode -1266371968 with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d inboundInitiated false initAt 1696498029896], enode enode://712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d@172.16.239.9:30303: StatusMessage{code=0, size=80} with connection [Connection with hashCode -1266371968 with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d inboundInitiated false initAt 1696498029896]
+2023-10-05 09:27:09.905+00:00 | nioEventLoopGroup-3-3 | DEBUG | ChainHeadTracker | Requesting chain head info from PeerId 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d, reputation PeerReputation 100, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode -1266371968 with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d inboundInitiated false initAt 1696498029896], enode enode://712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d@172.16.239.9:30303
+2023-10-05 09:27:09.906+00:00 | nioEventLoopGroup-3-3 | DEBUG | GetHeadersFromPeerByHashTask | Requesting 1 headers (hash 0xd6a6acfc01db...) from peer PeerId 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d, reputation PeerReputation 100, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode -1266371968 with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d inboundInitiated false initAt 1696498029896], enode enode://712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d@172.16.239.9:30303.
+2023-10-05 09:27:09.907+00:00 | nioEventLoopGroup-3-3 | DEBUG | WaitForPeerTask | Finished waiting for peer connection.
+2023-10-05 09:27:09.908+00:00 | nioEventLoopGroup-3-3 | INFO  | FullSyncTargetManager | Unable to find sync target. Currently checking 3 peers for usefulness
+2023-10-05 09:27:09.908+00:00 | nioEventLoopGroup-3-6 | DEBUG | EthProtocolManager | Received status message from PeerId 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d, reputation PeerReputation 100, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode -1266371968 with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d inboundInitiated false initAt 1696498029896], enode enode://712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d@172.16.239.9:30303: StatusMessage{code=0, size=80} with connection [Connection with hashCode -364275541 with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d inboundInitiated true initAt 1696498029901]
+2023-10-05 09:27:09.908+00:00 | nioEventLoopGroup-3-3 | DEBUG | WaitForPeerTask | Waiting for new peer connection. 3 peers currently connected.
+2023-10-05 09:27:09.901+00:00 | nioEventLoopGroup-3-4 | DEBUG | ChainHeadTracker | Requesting chain head info from PeerId 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000, reputation PeerReputation 100, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode 514909241 with peer 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000 inboundInitiated false initAt 1696498029894], enode enode://319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000@172.16.239.11:30303
+2023-10-05 09:27:09.911+00:00 | nioEventLoopGroup-3-4 | DEBUG | GetHeadersFromPeerByHashTask | Requesting 1 headers (hash 0xd6a6acfc01db...) from peer PeerId 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000, reputation PeerReputation 100, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode 514909241 with peer 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000 inboundInitiated false initAt 1696498029894], enode enode://319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000@172.16.239.11:30303.
+2023-10-05 09:27:09.912+00:00 | nioEventLoopGroup-3-4 | DEBUG | WaitForPeerTask | Finished waiting for peer connection.
+2023-10-05 09:27:09.914+00:00 | nioEventLoopGroup-3-3 | DEBUG | AbstractGetHeadersFromPeerTask | Received 1 of 1 headers requested from peer PeerId 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d, reputation PeerReputation 100, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode -1266371968 with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d inboundInitiated false initAt 1696498029896], enode enode://712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d@172.16.239.9:30303
+2023-10-05 09:27:09.915+00:00 | nioEventLoopGroup-3-3 | DEBUG | ChainHeadTracker | Retrieved chain head info 0 (0xd6a6acfc01db432b0175b337187bc59ae01c851a6e1c471abca242a017d287f7) from PeerId 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d, reputation PeerReputation 100, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode -1266371968 with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d inboundInitiated false initAt 1696498029896], enode enode://712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d@172.16.239.9:30303
+2023-10-05 09:27:09.918+00:00 | nioEventLoopGroup-3-5 | DEBUG | EthProtocolManager | Received status message from PeerId 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000, reputation PeerReputation 100, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode 514909241 with peer 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000 inboundInitiated false initAt 1696498029894], enode enode://319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000@172.16.239.11:30303: StatusMessage{code=0, size=80} with connection [Connection with hashCode -1483897137 with peer 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000 inboundInitiated true initAt 1696498029896]
+2023-10-05 09:27:09.919+00:00 | nioEventLoopGroup-3-5 | DEBUG | AbstractGetHeadersFromPeerTask | Received 1 of 1 headers requested from peer PeerId 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000, reputation PeerReputation 100, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode -1483897137 with peer 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000 inboundInitiated true initAt 1696498029896], enode enode://319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000@172.16.239.11:30303?discport=0
+2023-10-05 09:27:09.920+00:00 | nioEventLoopGroup-3-5 | DEBUG | ChainHeadTracker | Retrieved chain head info 0 (0xd6a6acfc01db432b0175b337187bc59ae01c851a6e1c471abca242a017d287f7) from PeerId 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000, reputation PeerReputation 100, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode -1483897137 with peer 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000 inboundInitiated true initAt 1696498029896], enode enode://319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000@172.16.239.11:30303?discport=0
+2023-10-05 09:27:11.739+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftBlockHeightManager | Round has expired, creating PreparedCertificate and notifying peers. round=ConsensusRoundIdentifier{Sequence=1, Round=0}
+2023-10-05 09:27:11.739+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftBlockHeightManager | Starting new round 1
+2023-10-05 09:27:11.741+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftBlockHeightManager | Received sufficient RoundChange messages to change round to targetRound=ConsensusRoundIdentifier{Sequence=1, Round=1}
+2023-10-05 09:27:11.743+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending proposal with new block. round=ConsensusRoundIdentifier{Sequence=1, Round=1}
+2023-10-05 09:27:11.750+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BlockTransactionSelector | Transaction pool stats Pending 0
+2023-10-05 09:27:11.753+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BlockTransactionSelector | Selection stats: Totals[Evaluated=0, Selected=0, NotSelected=0, Discarded=0]; Detailed[]
+2023-10-05 09:27:11.789+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending prepare message. round=ConsensusRoundIdentifier{Sequence=1, Round=1}
+2023-10-05 09:27:11.812+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=1, Round=1}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:11.824+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=1, Round=1}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:11.826+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending commit message. round=ConsensusRoundIdentifier{Sequence=1, Round=1}
+2023-10-05 09:27:11.843+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=1, Round=1}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:11.848+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=1, Round=1}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:11.853+00:00 | vert.x-eventloop-thread-1 | DEBUG | RecursivePeerRefreshState | Received neighbours packet with 3 neighbours from enode://712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d@172.16.239.9:30303
+2023-10-05 09:27:11.853+00:00 | BftProcessorExecutor-QBFT-0 | INFO  | QbftRound | Importing proposed block to chain. round=ConsensusRoundIdentifier{Sequence=1, Round=1}, hash=0x8f883be2d33ae0ece67faeaae8b2e61e1d9a986914d4613f631f415941d3e7da
+2023-10-05 09:27:11.853+00:00 | vert.x-eventloop-thread-1 | DEBUG | RecursivePeerRefreshState | Skipping bonding round because no candidates are available
+2023-10-05 09:27:11.854+00:00 | vert.x-eventloop-thread-1 | DEBUG | RecursivePeerRefreshState | Iterative peer search complete.  3 peers processed over 3 rounds.
+2023-10-05 09:27:11.870+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | TransactionLogBloomCacher | Caching logs bloom for block 0x1.
+2023-10-05 09:27:11.882+00:00 | BftProcessorExecutor-QBFT-0 | INFO  | QbftBesuControllerBuilder | Produced #1 / 0 tx / 0 pending / 0 (0.0%) gas / (0x8f883be2d33ae0ece67faeaae8b2e61e1d9a986914d4613f631f415941d3e7da)
+2023-10-05 09:27:11.882+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | New chain head detected (block number=1), currently mining on top of 0.
+2023-10-05 09:27:13.001+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftBlockHeightManager | Starting new round 0
+2023-10-05 09:27:13.031+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a proposal message. round=ConsensusRoundIdentifier{Sequence=2, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:13.038+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending prepare message. round=ConsensusRoundIdentifier{Sequence=2, Round=0}
+2023-10-05 09:27:13.052+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=2, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:13.056+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=2, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:13.056+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending commit message. round=ConsensusRoundIdentifier{Sequence=2, Round=0}
+2023-10-05 09:27:13.067+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=2, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:13.073+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=2, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:13.079+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=2, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:13.082+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Importing proposed block to chain. round=ConsensusRoundIdentifier{Sequence=2, Round=0}, hash=0x6d17af7b5e4f3348dce521f261990b3f6aeaa6b51c2b26932b5c08a9a8193a70
+2023-10-05 09:27:13.092+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | TransactionLogBloomCacher | Caching logs bloom for block 0x2.
+2023-10-05 09:27:13.094+00:00 | BftProcessorExecutor-QBFT-0 | INFO  | QbftBesuControllerBuilder | Imported #2 / 0 tx / 0 pending / 0 (0.0%) gas / (0x6d17af7b5e4f3348dce521f261990b3f6aeaa6b51c2b26932b5c08a9a8193a70)
+2023-10-05 09:27:13.095+00:00 | EthScheduler-Workers-0 | DEBUG | PersistBlockTask | Running import task for block 2 (0x6d17af7b5e4f3348dce521f261990b3f6aeaa6b51c2b26932b5c08a9a8193a70)
+2023-10-05 09:27:13.095+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | Discarding a message which targets a height 2 not above current chain height 2.
+2023-10-05 09:27:13.096+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | New chain head detected (block number=2), currently mining on top of 1.
+2023-10-05 09:27:13.096+00:00 | EthScheduler-Workers-0 | INFO  | PersistBlockTask | Block 2 (0x6d17af7b5e4f3348dce521f261990b3f6aeaa6b51c2b26932b5c08a9a8193a70) is already imported
+2023-10-05 09:27:14.911+00:00 | EthScheduler-Timer-0 | DEBUG | FullSyncTargetManager | Caught up to best peer: PeerId 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d, reputation PeerReputation 101, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode -1266371968 with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d inboundInitiated false initAt 1696498029896], enode enode://712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d@172.16.239.9:30303, chain state: ChainState{estimatedHeight=1, bestBlock=BestBlock{totalDifficulty=0x0000000000000000000000000000000000000000000000000000000000000002, blockHash=0x8f883be2d33ae0ece67faeaae8b2e61e1d9a986914d4613f631f415941d3e7da, number=1}}. Current peers: 3
+2023-10-05 09:27:14.911+00:00 | EthScheduler-Timer-0 | DEBUG | WaitForPeerTask | Waiting for new peer connection. 3 peers currently connected.
+2023-10-05 09:27:15.000+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftBlockHeightManager | Starting new round 0
+2023-10-05 09:27:15.031+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a proposal message. round=ConsensusRoundIdentifier{Sequence=3, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:15.036+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending prepare message. round=ConsensusRoundIdentifier{Sequence=3, Round=0}
+2023-10-05 09:27:15.046+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=3, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:15.050+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=3, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:15.050+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending commit message. round=ConsensusRoundIdentifier{Sequence=3, Round=0}
+2023-10-05 09:27:15.059+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=3, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:15.063+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=3, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:15.067+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=3, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:15.069+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Importing proposed block to chain. round=ConsensusRoundIdentifier{Sequence=3, Round=0}, hash=0x8499ea2857d2db31fa77649b76103539bcd7d8963d8bc81b21998614756e0095
+2023-10-05 09:27:15.077+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | TransactionLogBloomCacher | Caching logs bloom for block 0x3.
+2023-10-05 09:27:15.078+00:00 | BftProcessorExecutor-QBFT-0 | INFO  | QbftBesuControllerBuilder | Imported #3 / 0 tx / 0 pending / 0 (0.0%) gas / (0x8499ea2857d2db31fa77649b76103539bcd7d8963d8bc81b21998614756e0095)
+2023-10-05 09:27:15.080+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | Discarding a message which targets a height 3 not above current chain height 3.
+2023-10-05 09:27:15.080+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | New chain head detected (block number=3), currently mining on top of 2.
+2023-10-05 09:27:17.000+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftBlockHeightManager | Starting new round 0
+2023-10-05 09:27:17.013+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a proposal message. round=ConsensusRoundIdentifier{Sequence=4, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:17.018+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending prepare message. round=ConsensusRoundIdentifier{Sequence=4, Round=0}
+2023-10-05 09:27:17.030+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=4, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:17.033+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=4, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:17.033+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending commit message. round=ConsensusRoundIdentifier{Sequence=4, Round=0}
+2023-10-05 09:27:17.044+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=4, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:17.048+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=4, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:17.052+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=4, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:17.055+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Importing proposed block to chain. round=ConsensusRoundIdentifier{Sequence=4, Round=0}, hash=0x2f451b6945730081b85fbbfda4ccd99dcf5f0df84255ae439930220616170d8b
+2023-10-05 09:27:17.061+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | TransactionLogBloomCacher | Caching logs bloom for block 0x4.
+2023-10-05 09:27:17.063+00:00 | BftProcessorExecutor-QBFT-0 | INFO  | QbftBesuControllerBuilder | Imported #4 / 0 tx / 0 pending / 0 (0.0%) gas / (0x2f451b6945730081b85fbbfda4ccd99dcf5f0df84255ae439930220616170d8b)
+2023-10-05 09:27:17.064+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | Discarding a message which targets a height 4 not above current chain height 4.
+2023-10-05 09:27:17.064+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | New chain head detected (block number=4), currently mining on top of 3.
+2023-10-05 09:27:19.000+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftBlockHeightManager | Starting new round 0
+2023-10-05 09:27:19.003+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Creating proposed block. round=ConsensusRoundIdentifier{Sequence=5, Round=0}
+2023-10-05 09:27:19.004+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BlockTransactionSelector | Transaction pool stats Pending 0
+2023-10-05 09:27:19.004+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BlockTransactionSelector | Selection stats: Totals[Evaluated=0, Selected=0, NotSelected=0, Discarded=0]; Detailed[]
+2023-10-05 09:27:19.012+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending prepare message. round=ConsensusRoundIdentifier{Sequence=5, Round=0}
+2023-10-05 09:27:19.022+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=5, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:19.028+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=5, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:19.028+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending commit message. round=ConsensusRoundIdentifier{Sequence=5, Round=0}
+2023-10-05 09:27:19.037+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=5, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:19.039+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=5, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:19.042+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=5, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:19.043+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Importing proposed block to chain. round=ConsensusRoundIdentifier{Sequence=5, Round=0}, hash=0x0c6780d48c08bd26fa98089aa56833fc6add9e2621da608a078f96f707164015
+2023-10-05 09:27:19.048+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | TransactionLogBloomCacher | Caching logs bloom for block 0x5.
+2023-10-05 09:27:19.050+00:00 | BftProcessorExecutor-QBFT-0 | INFO  | QbftBesuControllerBuilder | Produced #5 / 0 tx / 0 pending / 0 (0.0%) gas / (0x0c6780d48c08bd26fa98089aa56833fc6add9e2621da608a078f96f707164015)
+2023-10-05 09:27:19.051+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | Discarding a message which targets a height 5 not above current chain height 5.
+2023-10-05 09:27:19.052+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | New chain head detected (block number=5), currently mining on top of 4.
+2023-10-05 09:27:19.913+00:00 | EthScheduler-Timer-0 | DEBUG | FullSyncTargetManager | Caught up to best peer: PeerId 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d, reputation PeerReputation 101, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode -1266371968 with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d inboundInitiated false initAt 1696498029896], enode enode://712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d@172.16.239.9:30303, chain state: ChainState{estimatedHeight=4, bestBlock=BestBlock{totalDifficulty=0x0000000000000000000000000000000000000000000000000000000000000005, blockHash=0x2f451b6945730081b85fbbfda4ccd99dcf5f0df84255ae439930220616170d8b, number=4}}. Current peers: 3
+2023-10-05 09:27:19.913+00:00 | EthScheduler-Timer-0 | DEBUG | WaitForPeerTask | Waiting for new peer connection. 3 peers currently connected.
+2023-10-05 09:27:21.001+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftBlockHeightManager | Starting new round 0
+2023-10-05 09:27:21.022+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a proposal message. round=ConsensusRoundIdentifier{Sequence=6, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:21.033+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending prepare message. round=ConsensusRoundIdentifier{Sequence=6, Round=0}
+2023-10-05 09:27:21.044+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=6, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:21.047+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=6, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:21.047+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending commit message. round=ConsensusRoundIdentifier{Sequence=6, Round=0}
+2023-10-05 09:27:21.056+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=6, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:21.059+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=6, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:21.063+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=6, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:21.066+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Importing proposed block to chain. round=ConsensusRoundIdentifier{Sequence=6, Round=0}, hash=0xf0c0f75de8e462571b50d1857e42d711d43b8428c6564f9c77a3a4aa0f192363
+2023-10-05 09:27:21.069+00:00 | EthScheduler-Workers-0 | DEBUG | PersistBlockTask | Running import task for block 6 (0xf0c0f75de8e462571b50d1857e42d711d43b8428c6564f9c77a3a4aa0f192363)
+2023-10-05 09:27:21.070+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | TransactionLogBloomCacher | Caching logs bloom for block 0x6.
+2023-10-05 09:27:21.070+00:00 | EthScheduler-Workers-0 | INFO  | PersistBlockTask | Block 6 (0xf0c0f75de8e462571b50d1857e42d711d43b8428c6564f9c77a3a4aa0f192363) is already imported
+2023-10-05 09:27:21.071+00:00 | BftProcessorExecutor-QBFT-0 | INFO  | QbftBesuControllerBuilder | Imported #6 / 0 tx / 0 pending / 0 (0.0%) gas / (0xf0c0f75de8e462571b50d1857e42d711d43b8428c6564f9c77a3a4aa0f192363)
+2023-10-05 09:27:21.072+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | Discarding a message which targets a height 6 not above current chain height 6.
+2023-10-05 09:27:21.072+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | New chain head detected (block number=6), currently mining on top of 5.
+2023-10-05 09:27:23.001+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftBlockHeightManager | Starting new round 0
+2023-10-05 09:27:23.011+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a proposal message. round=ConsensusRoundIdentifier{Sequence=7, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:23.016+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending prepare message. round=ConsensusRoundIdentifier{Sequence=7, Round=0}
+2023-10-05 09:27:23.023+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=7, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:23.026+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=7, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:23.027+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending commit message. round=ConsensusRoundIdentifier{Sequence=7, Round=0}
+2023-10-05 09:27:23.034+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=7, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:23.038+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=7, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:23.042+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=7, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:23.043+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Importing proposed block to chain. round=ConsensusRoundIdentifier{Sequence=7, Round=0}, hash=0x83b54f2775c3161951678e4f1d32637f9fb13c5744af59867de0c5c7ee7466c1
+2023-10-05 09:27:23.047+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | TransactionLogBloomCacher | Caching logs bloom for block 0x7.
+2023-10-05 09:27:23.049+00:00 | BftProcessorExecutor-QBFT-0 | INFO  | QbftBesuControllerBuilder | Imported #7 / 0 tx / 0 pending / 0 (0.0%) gas / (0x83b54f2775c3161951678e4f1d32637f9fb13c5744af59867de0c5c7ee7466c1)
+2023-10-05 09:27:23.051+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | Discarding a message which targets a height 7 not above current chain height 7.
+2023-10-05 09:27:23.051+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | New chain head detected (block number=7), currently mining on top of 6.
+2023-10-05 09:27:24.915+00:00 | EthScheduler-Timer-0 | DEBUG | FullSyncTargetManager | Caught up to best peer: PeerId 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d, reputation PeerReputation 101, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode -1266371968 with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d inboundInitiated false initAt 1696498029896], enode enode://712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d@172.16.239.9:30303, chain state: ChainState{estimatedHeight=6, bestBlock=BestBlock{totalDifficulty=0x0000000000000000000000000000000000000000000000000000000000000007, blockHash=0xf0c0f75de8e462571b50d1857e42d711d43b8428c6564f9c77a3a4aa0f192363, number=6}}. Current peers: 3
+2023-10-05 09:27:24.919+00:00 | EthScheduler-Timer-0 | DEBUG | WaitForPeerTask | Waiting for new peer connection. 3 peers currently connected.
+2023-10-05 09:27:25.000+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftBlockHeightManager | Starting new round 0
+2023-10-05 09:27:25.014+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a proposal message. round=ConsensusRoundIdentifier{Sequence=8, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:25.022+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending prepare message. round=ConsensusRoundIdentifier{Sequence=8, Round=0}
+2023-10-05 09:27:25.035+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=8, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:25.040+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=8, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:25.040+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending commit message. round=ConsensusRoundIdentifier{Sequence=8, Round=0}
+2023-10-05 09:27:25.046+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=8, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:25.049+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=8, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:25.051+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=8, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:25.052+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Importing proposed block to chain. round=ConsensusRoundIdentifier{Sequence=8, Round=0}, hash=0xb73846faf43e51fc16c5fcad9ce72c5bc45490ece4c5ed5ee0267038eb244e50
+2023-10-05 09:27:25.057+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | TransactionLogBloomCacher | Caching logs bloom for block 0x8.
+2023-10-05 09:27:25.060+00:00 | BftProcessorExecutor-QBFT-0 | INFO  | QbftBesuControllerBuilder | Imported #8 / 0 tx / 0 pending / 0 (0.0%) gas / (0xb73846faf43e51fc16c5fcad9ce72c5bc45490ece4c5ed5ee0267038eb244e50)
+2023-10-05 09:27:25.061+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | Discarding a message which targets a height 8 not above current chain height 8.
+2023-10-05 09:27:25.061+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | New chain head detected (block number=8), currently mining on top of 7.
+2023-10-05 09:27:27.000+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftBlockHeightManager | Starting new round 0
+2023-10-05 09:27:27.003+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Creating proposed block. round=ConsensusRoundIdentifier{Sequence=9, Round=0}
+2023-10-05 09:27:27.004+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BlockTransactionSelector | Transaction pool stats Pending 0
+2023-10-05 09:27:27.004+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BlockTransactionSelector | Selection stats: Totals[Evaluated=0, Selected=0, NotSelected=0, Discarded=0]; Detailed[]
+2023-10-05 09:27:27.012+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending prepare message. round=ConsensusRoundIdentifier{Sequence=9, Round=0}
+2023-10-05 09:27:27.021+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=9, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:27.024+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=9, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:27.024+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending commit message. round=ConsensusRoundIdentifier{Sequence=9, Round=0}
+2023-10-05 09:27:27.032+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=9, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:27.034+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=9, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:27.037+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=9, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:27.038+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Importing proposed block to chain. round=ConsensusRoundIdentifier{Sequence=9, Round=0}, hash=0x87351ee6d91753436c8bfbafbbb0b4d0ebfc45b76076fdff293a62074060df4e
+2023-10-05 09:27:27.043+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | TransactionLogBloomCacher | Caching logs bloom for block 0x9.
+2023-10-05 09:27:27.046+00:00 | BftProcessorExecutor-QBFT-0 | INFO  | QbftBesuControllerBuilder | Produced #9 / 0 tx / 0 pending / 0 (0.0%) gas / (0x87351ee6d91753436c8bfbafbbb0b4d0ebfc45b76076fdff293a62074060df4e)
+2023-10-05 09:27:27.047+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | Discarding a message which targets a height 9 not above current chain height 9.
+2023-10-05 09:27:27.047+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | New chain head detected (block number=9), currently mining on top of 8.
+2023-10-05 09:27:29.000+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftBlockHeightManager | Starting new round 0
+2023-10-05 09:27:29.009+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a proposal message. round=ConsensusRoundIdentifier{Sequence=10, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:29.013+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending prepare message. round=ConsensusRoundIdentifier{Sequence=10, Round=0}
+2023-10-05 09:27:29.019+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=10, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:29.023+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=10, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:29.023+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending commit message. round=ConsensusRoundIdentifier{Sequence=10, Round=0}
+2023-10-05 09:27:29.033+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=10, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:29.037+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=10, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:29.041+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=10, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:29.043+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Importing proposed block to chain. round=ConsensusRoundIdentifier{Sequence=10, Round=0}, hash=0xf46aa4b5971388b5ce72d85dc4c07dbae3da45ba07b496768a3a53da655248a3
+2023-10-05 09:27:29.050+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | TransactionLogBloomCacher | Caching logs bloom for block 0xa.
+2023-10-05 09:27:29.051+00:00 | BftProcessorExecutor-QBFT-0 | INFO  | QbftBesuControllerBuilder | Imported #10 / 0 tx / 0 pending / 0 (0.0%) gas / (0xf46aa4b5971388b5ce72d85dc4c07dbae3da45ba07b496768a3a53da655248a3)
+2023-10-05 09:27:29.052+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | Discarding a message which targets a height 10 not above current chain height 10.
+2023-10-05 09:27:29.052+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | New chain head detected (block number=10), currently mining on top of 9.
+2023-10-05 09:27:29.055+00:00 | nioEventLoopGroup-3-2 | DEBUG | AbstractPeerConnection | Terminating connection [Connection with hashCode 1723417609 with peer 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b inboundInitiated true initAt 1696498028258], reason 0x01 TCP_SUBSYSTEM_ERROR
+2023-10-05 09:27:29.056+00:00 | nioEventLoopGroup-3-2 | DEBUG | AbstractPeerConnection | Terminating connection [Connection with hashCode 1723417609 with peer 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b inboundInitiated true initAt 1696498028258], reason 0x05 ALREADY_CONNECTED
+2023-10-05 09:27:29.056+00:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractPeerConnection | Disconnecting connection 1275682046, reason 0x05 ALREADY_CONNECTED
+2023-10-05 09:27:29.920+00:00 | EthScheduler-Timer-0 | DEBUG | FullSyncTargetManager | Caught up to best peer: PeerId 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d, reputation PeerReputation 101, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode -1266371968 with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d inboundInitiated false initAt 1696498029896], enode enode://712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d@172.16.239.9:30303, chain state: ChainState{estimatedHeight=9, bestBlock=BestBlock{totalDifficulty=0x000000000000000000000000000000000000000000000000000000000000000a, blockHash=0x87351ee6d91753436c8bfbafbbb0b4d0ebfc45b76076fdff293a62074060df4e, number=9}}. Current peers: 3
+2023-10-05 09:27:29.920+00:00 | EthScheduler-Timer-0 | DEBUG | WaitForPeerTask | Waiting for new peer connection. 3 peers currently connected.
+2023-10-05 09:27:31.000+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftBlockHeightManager | Starting new round 0
+2023-10-05 09:27:31.010+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a proposal message. round=ConsensusRoundIdentifier{Sequence=11, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:31.014+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending prepare message. round=ConsensusRoundIdentifier{Sequence=11, Round=0}
+2023-10-05 09:27:31.018+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=11, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:31.020+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=11, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:31.021+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending commit message. round=ConsensusRoundIdentifier{Sequence=11, Round=0}
+2023-10-05 09:27:31.028+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=11, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:31.030+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=11, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:31.033+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=11, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:31.034+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Importing proposed block to chain. round=ConsensusRoundIdentifier{Sequence=11, Round=0}, hash=0x3c0554ddcea75b21a95a3bf9d13951497dec6a684220ea646badd74e0b7d72bb
+2023-10-05 09:27:31.044+00:00 | nioEventLoopGroup-3-3 | DEBUG | AbstractPeerConnection | Disconnecting connection 1954709447, reason 0x05 ALREADY_CONNECTED
+2023-10-05 09:27:31.044+00:00 | nioEventLoopGroup-3-3 | DEBUG | AbstractPeerConnection | Disconnecting connection 191031840, reason 0x05 ALREADY_CONNECTED
+2023-10-05 09:27:31.045+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | TransactionLogBloomCacher | Caching logs bloom for block 0xb.
+2023-10-05 09:27:31.047+00:00 | BftProcessorExecutor-QBFT-0 | INFO  | QbftBesuControllerBuilder | Imported #11 / 0 tx / 0 pending / 0 (0.0%) gas / (0x3c0554ddcea75b21a95a3bf9d13951497dec6a684220ea646badd74e0b7d72bb)
+2023-10-05 09:27:31.048+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | Discarding a message which targets a height 11 not above current chain height 11.
+2023-10-05 09:27:31.049+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | New chain head detected (block number=11), currently mining on top of 10.
+2023-10-05 09:27:31.050+00:00 | nioEventLoopGroup-3-6 | DEBUG | AbstractPeerConnection | Terminating connection [Connection with hashCode -364275541 with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d inboundInitiated true initAt 1696498029901], reason 0x01 TCP_SUBSYSTEM_ERROR
+2023-10-05 09:27:31.051+00:00 | nioEventLoopGroup-3-4 | DEBUG | AbstractPeerConnection | Terminating connection [Connection with hashCode 514909241 with peer 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000 inboundInitiated false initAt 1696498029894], reason 0x01 TCP_SUBSYSTEM_ERROR
+2023-10-05 09:27:32.170+00:00 | EthScheduler-Transactions-0 | DEBUG | TransactionPool | Adding 1 remote transactions
+2023-10-05 09:27:32.190+00:00 | EthScheduler-Transactions-0 | DEBUG | TransactionPool | Added 1 transactions to the pool in 19ms, 0 not added, current pool stats Pending 1
+2023-10-05 09:27:32.200+00:00 | EthScheduler-Transactions-0 | DEBUG | TransactionPool | Adding 0 remote transactions
+2023-10-05 09:27:32.201+00:00 | EthScheduler-Transactions-0 | DEBUG | TransactionPool | Added 0 transactions to the pool in 1ms, 0 not added, current pool stats Pending 1
+2023-10-05 09:27:32.727+00:00 | EthScheduler-Transactions-0 | DEBUG | TransactionPool | Adding 0 remote transactions
+2023-10-05 09:27:32.728+00:00 | EthScheduler-Transactions-0 | DEBUG | TransactionPool | Added 0 transactions to the pool in 0ms, 0 not added, current pool stats Pending 1
+2023-10-05 09:27:33.001+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftBlockHeightManager | Starting new round 0
+2023-10-05 09:27:33.041+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a proposal message. round=ConsensusRoundIdentifier{Sequence=12, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:33.085+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending prepare message. round=ConsensusRoundIdentifier{Sequence=12, Round=0}
+2023-10-05 09:27:33.090+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=12, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:33.095+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=12, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:33.096+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending commit message. round=ConsensusRoundIdentifier{Sequence=12, Round=0}
+2023-10-05 09:27:33.104+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=12, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:33.108+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=12, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:33.111+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=12, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:33.112+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Importing proposed block to chain. round=ConsensusRoundIdentifier{Sequence=12, Round=0}, hash=0xc4c0de8f97c9094fb1b7b061c9714744ec9b21152fe17c5c6535e906fa40ab91
+2023-10-05 09:27:33.129+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | TransactionLogBloomCacher | Caching logs bloom for block 0xc.
+2023-10-05 09:27:33.130+00:00 | EthScheduler-Workers-0 | DEBUG | PersistBlockTask | Running import task for block 12 (0xc4c0de8f97c9094fb1b7b061c9714744ec9b21152fe17c5c6535e906fa40ab91)
+2023-10-05 09:27:33.131+00:00 | EthScheduler-Workers-0 | INFO  | PersistBlockTask | Block 12 (0xc4c0de8f97c9094fb1b7b061c9714744ec9b21152fe17c5c6535e906fa40ab91) is already imported
+2023-10-05 09:27:33.131+00:00 | BftProcessorExecutor-QBFT-0 | INFO  | QbftBesuControllerBuilder | Imported #12 / 1 tx / 0 pending / 3,642,633 (0.0%) gas / (0xc4c0de8f97c9094fb1b7b061c9714744ec9b21152fe17c5c6535e906fa40ab91)
+2023-10-05 09:27:33.132+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | Discarding a message which targets a height 12 not above current chain height 12.
+2023-10-05 09:27:33.133+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | New chain head detected (block number=12), currently mining on top of 11.
+2023-10-05 09:27:34.922+00:00 | EthScheduler-Timer-0 | DEBUG | FullSyncTargetManager | Caught up to best peer: PeerId 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d, reputation PeerReputation 101, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode -1266371968 with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d inboundInitiated false initAt 1696498029896], enode enode://712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d@172.16.239.9:30303, chain state: ChainState{estimatedHeight=11, bestBlock=BestBlock{totalDifficulty=0x000000000000000000000000000000000000000000000000000000000000000c, blockHash=0x3c0554ddcea75b21a95a3bf9d13951497dec6a684220ea646badd74e0b7d72bb, number=11}}. Current peers: 3
+2023-10-05 09:27:34.922+00:00 | EthScheduler-Timer-0 | DEBUG | WaitForPeerTask | Waiting for new peer connection. 3 peers currently connected.
+2023-10-05 09:27:35.000+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftBlockHeightManager | Starting new round 0
+2023-10-05 09:27:35.002+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Creating proposed block. round=ConsensusRoundIdentifier{Sequence=13, Round=0}
+2023-10-05 09:27:35.002+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BlockTransactionSelector | Transaction pool stats Pending 0
+2023-10-05 09:27:35.002+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BlockTransactionSelector | Selection stats: Totals[Evaluated=0, Selected=0, NotSelected=0, Discarded=0]; Detailed[]
+2023-10-05 09:27:35.008+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending prepare message. round=ConsensusRoundIdentifier{Sequence=13, Round=0}
+2023-10-05 09:27:35.016+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=13, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:35.020+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=13, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:35.020+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Sending commit message. round=ConsensusRoundIdentifier{Sequence=13, Round=0}
+2023-10-05 09:27:35.025+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a prepare message. round=ConsensusRoundIdentifier{Sequence=13, Round=0}. author=0xe16d769bbc7c79e95f37545ded5883646671701b
+2023-10-05 09:27:35.027+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=13, Round=0}. author=0x24167d4bcb1400ad87f52568ef7b415eb437678a
+2023-10-05 09:27:35.031+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Received a commit message. round=ConsensusRoundIdentifier{Sequence=13, Round=0}. author=0xda9046b830648c68f4a8d7a42940b5c9e9d218c3
+2023-10-05 09:27:35.033+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | QbftRound | Importing proposed block to chain. round=ConsensusRoundIdentifier{Sequence=13, Round=0}, hash=0x4634c9d3efbae3414a34ed0fdecf32e467eb5e41846b056d19cd12125e078575
+2023-10-05 09:27:35.039+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | TransactionLogBloomCacher | Caching logs bloom for block 0xd.
+2023-10-05 09:27:35.042+00:00 | BftProcessorExecutor-QBFT-0 | INFO  | QbftBesuControllerBuilder | Produced #13 / 0 tx / 0 pending / 0 (0.0%) gas / (0x4634c9d3efbae3414a34ed0fdecf32e467eb5e41846b056d19cd12125e078575)
+2023-10-05 09:27:35.044+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | Discarding a message which targets a height 13 not above current chain height 13.
+2023-10-05 09:27:35.044+00:00 | BftProcessorExecutor-QBFT-0 | DEBUG | BaseBftController | New chain head detected (block number=13), currently mining on top of 12.
+2023-10-05 09:27:36.273+00:00 | BesuCommand-Shutdown-Hook | DEBUG | BesuPluginContextImpl | Plugin shutdown complete.
+2023-10-05 09:27:36.546+00:00 | BftProcessorExecutor-QBFT-0 | INFO  | BftProcessor | Shutting down BFT event processor
+2023-10-05 09:27:36.549+00:00 | BesuCommand-Shutdown-Hook | INFO  | DefaultSynchronizer | Stopping synchronizer
+2023-10-05 09:27:36.553+00:00 | BesuCommand-Shutdown-Hook | INFO  | NetworkRunner | Stopping Network.
+2023-10-05 09:27:36.566+00:00 | BesuCommand-Shutdown-Hook | DEBUG | EthPeer | handleDisconnect - EthPeer PeerId 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d, reputation PeerReputation 101, validated? true, disconnected? true, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode -1266371968 with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d inboundInitiated false initAt 1696498029896], enode enode://712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d@172.16.239.9:30303
+2023-10-05 09:27:36.568+00:00 | BesuCommand-Shutdown-Hook | DEBUG | EthPeers | Disconnected EthPeer PeerId 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d, reputation PeerReputation 101, validated? true, disconnected? true, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode -1266371968 with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d inboundInitiated false initAt 1696498029896], enode enode://712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d@172.16.239.9:30303
+2023-10-05 09:27:36.576+00:00 | BesuCommand-Shutdown-Hook | DEBUG | EthProtocolManager | Disconnect - Outbound - 0x08 CLIENT_QUITTING - 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d - 2 peers left
+2 EthPeers {
+PeerId 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000, reputation PeerReputation 101, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode -1483897137 with peer 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000 inboundInitiated true initAt 1696498029896], enode enode://319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000@172.16.239.11:30303?discport=0, 
+PeerId 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b, reputation PeerReputation 101, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode 1141708812 with peer 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b inboundInitiated false initAt 1696498028258], enode enode://b36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b@172.16.239.8:30303}
+2023-10-05 09:27:36.577+00:00 | BesuCommand-Shutdown-Hook | DEBUG | AbstractPeerConnection | Disconnecting connection 1596392081, reason 0x08 CLIENT_QUITTING
+2023-10-05 09:27:36.579+00:00 | nioEventLoopGroup-3-3 | DEBUG | AbstractPeerConnection | Terminating connection [Connection with hashCode -1266371968 with peer 0x712ca4ec2ecf66dbe8ef0091463344b8f25c69d249325a995c598613ce2b28dcc79795333d4c81f000c683288740dee158d30c25d077c1a1a6809a7030bb896d inboundInitiated false initAt 1696498029896], reason 0x01 TCP_SUBSYSTEM_ERROR
+2023-10-05 09:27:36.579+00:00 | BesuCommand-Shutdown-Hook | DEBUG | EthPeer | handleDisconnect - EthPeer PeerId 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b, reputation PeerReputation 101, validated? true, disconnected? true, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode 1141708812 with peer 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b inboundInitiated false initAt 1696498028258], enode enode://b36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b@172.16.239.8:30303
+2023-10-05 09:27:36.579+00:00 | BesuCommand-Shutdown-Hook | DEBUG | EthPeers | Disconnected EthPeer PeerId 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b, reputation PeerReputation 101, validated? true, disconnected? true, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode 1141708812 with peer 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b inboundInitiated false initAt 1696498028258], enode enode://b36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b@172.16.239.8:30303
+2023-10-05 09:27:36.580+00:00 | BesuCommand-Shutdown-Hook | DEBUG | EthProtocolManager | Disconnect - Outbound - 0x08 CLIENT_QUITTING - 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b - 1 peers left
+1 EthPeers {
+PeerId 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000, reputation PeerReputation 101, validated? true, disconnected? false, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode -1483897137 with peer 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000 inboundInitiated true initAt 1696498029896], enode enode://319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000@172.16.239.11:30303?discport=0}
+2023-10-05 09:27:36.581+00:00 | BesuCommand-Shutdown-Hook | DEBUG | AbstractPeerConnection | Disconnecting connection 1008973635, reason 0x08 CLIENT_QUITTING
+2023-10-05 09:27:36.581+00:00 | BesuCommand-Shutdown-Hook | DEBUG | EthPeer | handleDisconnect - EthPeer PeerId 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000, reputation PeerReputation 101, validated? true, disconnected? true, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode -1483897137 with peer 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000 inboundInitiated true initAt 1696498029896], enode enode://319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000@172.16.239.11:30303?discport=0
+2023-10-05 09:27:36.582+00:00 | BesuCommand-Shutdown-Hook | DEBUG | EthPeers | Disconnected EthPeer PeerId 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000, reputation PeerReputation 101, validated? true, disconnected? true, client: besu/v23.7.2/linux-x86_64/openjdk-java-17, connection [Connection with hashCode -1483897137 with peer 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000 inboundInitiated true initAt 1696498029896], enode enode://319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000@172.16.239.11:30303?discport=0
+2023-10-05 09:27:36.582+00:00 | BesuCommand-Shutdown-Hook | DEBUG | EthProtocolManager | Disconnect - Outbound - 0x08 CLIENT_QUITTING - 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000 - 0 peers left
+0 EthPeers {}
+2023-10-05 09:27:36.583+00:00 | BesuCommand-Shutdown-Hook | DEBUG | AbstractPeerConnection | Disconnecting connection 330752753, reason 0x08 CLIENT_QUITTING
+2023-10-05 09:27:36.583+00:00 | nioEventLoopGroup-3-5 | DEBUG | AbstractPeerConnection | Terminating connection [Connection with hashCode -1483897137 with peer 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000 inboundInitiated true initAt 1696498029896], reason 0x01 TCP_SUBSYSTEM_ERROR
+2023-10-05 09:27:36.583+00:00 | nioEventLoopGroup-3-5 | DEBUG | AbstractPeerConnection | Terminating connection [Connection with hashCode -1483897137 with peer 0x319f406465a5d5515fcf072507c90958bde4627bdeea09735bcdef7176468a2d3037828bab2341947843cd5887f24f2d442be483d0b082f145063984353c8000 inboundInitiated true initAt 1696498029896], reason 0x08 CLIENT_QUITTING
+2023-10-05 09:27:36.584+00:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractPeerConnection | Terminating connection [Connection with hashCode 1141708812 with peer 0xb36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b inboundInitiated false initAt 1696498028258], reason 0x01 TCP_SUBSYSTEM_ERROR
+2023-10-05 09:27:36.585+00:00 | nioEventLoopGroup-3-2 | DEBUG | PoolThreadCache | Freed 5 thread-local buffer(s) from thread: nioEventLoopGroup-3-2
+2023-10-05 09:27:36.587+00:00 | nioEventLoopGroup-3-4 | DEBUG | PoolThreadCache | Freed 5 thread-local buffer(s) from thread: nioEventLoopGroup-3-4
+2023-10-05 09:27:36.589+00:00 | nioEventLoopGroup-3-6 | DEBUG | PoolThreadCache | Freed 6 thread-local buffer(s) from thread: nioEventLoopGroup-3-6
+2023-10-05 09:27:36.590+00:00 | BesuCommand-Shutdown-Hook | INFO  | EthProtocolManager | Stopping eth Subprotocol.
+2023-10-05 09:27:36.690+00:00 | BesuCommand-Shutdown-Hook | INFO  | EthProtocolManager | eth Subprotocol stopped.
+2023-10-05 09:27:36.690+00:00 | BesuCommand-Shutdown-Hook | INFO  | NetworkRunner | Network stopped.
+2023-10-05 09:27:36.691+00:00 | BesuCommand-Shutdown-Hook | INFO  | AutoTransactionLogBloomCachingService | Shutting down Auto transaction logs caching service.
+2023-10-05 09:27:36.700+00:00 | BesuCommand-Shutdown-Hook | INFO  | NatService | No NAT environment detected so no service could be stopped
+2023-10-05 09:27:36.716+00:00 | vert.x-eventloop-thread-1 | DEBUG | PoolThreadCache | Freed 4 thread-local buffer(s) from thread: vert.x-eventloop-thread-1

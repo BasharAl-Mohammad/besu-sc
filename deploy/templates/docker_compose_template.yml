@@ -20,7 +20,8 @@ services:
         --host-allowlist="*" --rpc-http-cors-origins="all" \
         --rpc-http-api=ADMIN, IBFT, QBFT, CLIQUE, ETH, NET, TXPOOL, WEB3 \
         --rpc-ws-enabled --rpc-ws-port=8546 --p2p-port=30303 --min-gas-price=0 \
-        --miner-coinbase f17f52151EbEF6C7334FAD080c5704D77216b732;
+        --miner-coinbase f17f52151EbEF6C7334FAD080c5704D77216b732 \
+        --logging=DEBUG;
     volumes:
       - ./genesis.json:/opt/besu/genesis.json
       - ./nodes/node-1/data:/opt/besu/data

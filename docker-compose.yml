@@ -20,7 +20,8 @@ services:
         --host-allowlist="*" --rpc-http-cors-origins="all" \
         --rpc-http-api=ADMIN, IBFT, QBFT, CLIQUE, ETH, NET, TXPOOL, WEB3 \
         --rpc-ws-enabled --rpc-ws-port=8546 --p2p-port=30303 --min-gas-price=0 \
-        --miner-coinbase f17f52151EbEF6C7334FAD080c5704D77216b732;
+        --miner-coinbase f17f52151EbEF6C7334FAD080c5704D77216b732 \
+        --logging=DEBUG;
     volumes:
       - ./genesis.json:/opt/besu/genesis.json
       - ./nodes/node-1/data:/opt/besu/data
@@ -39,7 +40,7 @@ services:
         /opt/besu/bin/besu --data-path=/opt/besu/data \
          --genesis-file=/opt/besu/genesis.json \
          --config-file=/config/config.toml \
-         --bootnodes=enode://e551ee9e3b48091fd896eb09da6588ebcdab5dc65944ae8e96e4818d93e8eae53a8e5ea51a05f19f330314c08d305d500ca92ad03575c2120242563adb6f48b1@172.16.239.8:30303;
+         --bootnodes=enode://b36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b@172.16.239.8:30303;
 
     volumes:
       - ./genesis.json:/opt/besu/genesis.json
@@ -62,7 +63,7 @@ services:
         /opt/besu/bin/besu --data-path=/opt/besu/data \
          --genesis-file=/opt/besu/genesis.json \
          --config-file=/config/config.toml \
-         --bootnodes=enode://e551ee9e3b48091fd896eb09da6588ebcdab5dc65944ae8e96e4818d93e8eae53a8e5ea51a05f19f330314c08d305d500ca92ad03575c2120242563adb6f48b1@172.16.239.8:30303;
+         --bootnodes=enode://b36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b@172.16.239.8:30303;
 
     volumes:
       - ./genesis.json:/opt/besu/genesis.json
@@ -85,7 +86,7 @@ services:
         /opt/besu/bin/besu --data-path=/opt/besu/data \
          --genesis-file=/opt/besu/genesis.json \
          --config-file=/config/config.toml \
-         --bootnodes=enode://e551ee9e3b48091fd896eb09da6588ebcdab5dc65944ae8e96e4818d93e8eae53a8e5ea51a05f19f330314c08d305d500ca92ad03575c2120242563adb6f48b1@172.16.239.8:30303;
+         --bootnodes=enode://b36cfaed98e742d075549f39e0b1cb9c016418f2f3e9f115475ec9d6d6d78dba685ea393f663daafd4d8988eea9ebd10e5c2a41361c8f8326bc96f87aa12ed2b@172.16.239.8:30303;
 
     volumes:
       - ./genesis.json:/opt/besu/genesis.json

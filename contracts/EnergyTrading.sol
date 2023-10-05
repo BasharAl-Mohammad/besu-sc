@@ -126,8 +126,7 @@ contract EnergyTradingContract {
     }
 
     function createBuyOrder(uint24 energyAmount, uint8 session) public payable onlyContributor acceptingTrades {
-        require(msg.value > 0, "Sent value must be greater than 0");
-        require(energyAmount * buyPrice == msg.value, "Incorrect value for energy");
+        require(energyAmount * buyPrice == msg.value / 1e18, "Incorrect value for energy");
         require(
             block.timestamp < dayTrade - 10 * 60 && block.timestamp > dayTrade - 24 * 60 * 60,
             "Not within tradetime"
@@ -138,7 +137,7 @@ contract EnergyTradingContract {
             session,
             msg.sender,
             energyAmount,
-            msg.value,
+            energyAmount * buyPrice,
             buyPrice,
             true
         );
@@ -192,20 +191,53 @@ contract EnergyTradingContract {
         return orders;
     }
 
-    function processNewTransactions(Transaction[] memory newTransactions) public onlyAdmin {
-        for (uint256 i = 0; i < newTransactions.length; i++) {
-            Transaction memory newTransaction = newTransactions[i];
-            transferFunds(payable(newTransaction.seller), newTransaction.cost);
-            transactions.push(newTransaction);
-        }
+    // function processNewTransactions(Transaction[] memory newTransactions) public onlyAdmin {
+    //     for (uint256 i = 0; i < newTransactions.length; i++) {
+    //         Transaction memory newTransaction = newTransactions[i];
+    //         address payable recipient = payable(newTransaction.seller);
+    //         recipient.transfer(newTransaction.cost);
+    //         transactions.push(newTransaction);
+    //     }
+    // }
+
+    function processNewTransaction(uint256 orderId, address buyer, address seller, uint24 energyAmount, uint256 cost, uint256 timestamp) public onlyAdmin {
+        Transaction memory newTransaction = Transaction(
+            orderId,
+            buyer,
+            seller,
+            energyAmount,
+            cost,
+            timestamp
+        );
+        // address payable recipient = payable(newTransaction.seller);
+        // recipient.transfer(newTransaction.cost);
+        transactions.push(newTransaction);
     }
 
-    function processNewRefunds(Refund[] memory newRefunds) public onlyAdmin {
-        for (uint256 i = 0; i < newRefunds.length; i++) {
-            Refund memory newRefund = newRefunds[i];
-            transferFunds(payable(newRefund.to), newRefund.cost);
-            refunds.push(newRefund);
-        }
+    function sendEther(address payable recipient,uint256 amount) public onlyAdmin {
+
+        recipient.transfer(amount*1e18);
+    }
+
+    // function processNewRefunds(Refund[] memory newRefunds) public onlyAdmin {
+    //     for (uint256 i = 0; i < newRefunds.length; i++) {
+    //         Refund memory newRefund = newRefunds[i];
+    //         address payable recipient = payable(newRefund.to);
+    //         recipient.transfer(newRefund.cost);
+    //         refunds.push(newRefund);
+    //     }
+    // }
+    
+    function processNewRefund(uint256 orderId, address to, uint24 energyAmount, uint256 cost) public onlyAdmin {
+        Refund memory newRefund = Refund(
+            orderId,
+            to,
+            energyAmount,
+            cost
+        );
+        // address payable recipient = payable(newRefund.to);
+        // recipient.transfer(newRefund.cost);
+        refunds.push(newRefund);
     }
 
     function getTransactionsByOrderId(uint256 _orderId) external view returns (Transaction[] memory) {
@@ -262,8 +294,6 @@ contract EnergyTradingContract {
 
     function transferFunds(address payable recipient, uint256 amount) internal {
         require(recipient != address(0), "Invalid recipient address");
-        require(amount > 0 && amount <= address(this).balance, "Invalid transfer amount");
-
-        recipient.transfer(amount);
+        payable(recipient).transfer(amount);
     }
 }
